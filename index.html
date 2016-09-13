@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home | Demo page</title>
-	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<title>Demo page guide | Demo page</title>
 	<style type="text/css">
-		html, ul {
+		html, ul, p {
 			margin: 0;
 			padding: 0;
 		}
 		body {
 			background: #708090;
+			font-family: Tahoma;
 		}
 		ul {
 			list-style: none;
+		}
+		ul a {
+			color: #000;
+			font-weight: bold;
+			text-decoration: underline;
+		}
+		ul.others>li {
+			margin: 0 40px 0 0;
+			float: left;
+		}
+		ul li label {
+			margin: 0 0 20px 0;
+			display: block;
+			color: #0004ff;
+			font-size: 14px;
+		}
+		ul li label>span {
+			font-weight: bold;
+			color: #5a00ff;
+		}
+		p {
+			font-size: 16px;
+			font-family: Verdana;
+		}
+		p span.p {
+			margin: 10px 0 0 0;
+			text-indent: 20px;
+			font-weight: bold;
+			display: block;
+		}
+		ol {
+			margin: 0 0 20px 0;
+			list-style: circle;
+			font-size: 16px;
 		}
 	</style>
 </head>
 <body>
 	<script type="text/javascript">(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/parisian-macao/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
 })();</script>
-	<h1>Confirmation demo page</h1>
+	<h1>You can modify the request parameters of the url, available options:</h1>
+	<ul class="others">
+		<li>
+			<p>
+				1. language: <br>
+				<span class="p">lang</span>
+			</p>
+			<ol>
+				<li>en (default)</li>
+				<li>cn</li>
+				<li>hk</li>
+			</ol>
+		</li>
+		<li>
+			<p>	
+				2. suite numbers(tracking objects number): <br>
+				<span class="p">room</span>
+			</p>
+			<ol>
+				<li>1</li>
+				<li>2 (default)</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+			</ol>
+		</li>
+		<li>
+			<p>
+				2. hotel property names: <br>
+				<span class="p">property</span>
+			</p>
+			<ol>
+				<li>parisianmacao (default)</li>
+				<li>venetianmacao</li>
+				<li>holidayinn</li>
+				<li>conrad</li>
+				<li>sandsmacao</li>
+			</ol>
+		</li>
+	</ul>
+	<div style="clear: both;"></div>
+	<h1>Example entrance:</h1>
 	<ul>
 		<li>
-			<a href="confirmation.html?"></a>
+			<a href="confirmation.html" target="_blank">> Default</a>
+			<label>confirmation.html</label>
+		</li>
+		<li>
+			<a href="confirmation.html?lang=cn&room=3&property=parisianmacao" target="_blank">> Simple chinese, 4 rooms, Parisian Macao</a>
+			<label>confirmation.html<span>?</span>lang=cn<span>&</span>room=3<span>&</span>property=parisianmacao</label>
+		</li>
+		<li>
+			<a href="confirmation.html?lang=hk&room=5&property=venetianmacao" target="_blank">> Traditional chinese, 5 rooms, Venetian Macao</a>
+			<label>confirmation.html<span>?</span>lang=hk<span>&</span>room=5<span>&</span>property=venetianmacao</label>
 		</li>
 	</ul>
 </body>
