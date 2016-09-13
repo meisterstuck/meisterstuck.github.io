@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Confirmation | Demo Page</title>
+	<script type="text/javascript">
+	function getRequestParam(key) {
+		var url = window.location.href;
+    	key = key.replace(/[\[\]]/g, "\\$&");
+    	var regex = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    	if (!results) return null;
+    	if (!results[2]) return '';
+    	var t = decodeURIComponent(results[2].replace(/\+/g, " "));
+    	return t;
+	}
+	function generateTransactionNumber(property) {
+		var orderId = "";
+		switch(property) {
+			case "parisianmacao":
+				orderId = "PM" + Math.floor(Math.random()*999999);
+				break;
+			case "venetianmacao":
+				orderId = "VM" + Math.floor(Math.random()*999999);
+				break;
+			case "holidayinn":
+				orderId = "HI" + Math.floor(Math.random()*999999);
+				break;
+			case "conrad":
+				orderId = "CD" + Math.floor(Math.random()*999999);
+				break;
+			case "sandsmacao":
+				orderId = "SM" + Math.floor(Math.random()*999999);
+				break;
+			default:
+				orderId = "PM" + Math.floor(Math.random()*999999);
+				break;
+		}
+		return orderId;
+	}
+	function getRoomName() {
+		var random = Math.floor(Math.random()*10);
+		var names = {
+			1: "Deluxe Room-King",
+			2: "Deluxe Room-Queen",
+			3: "Famille Room-King",
+			4: "Famille Room-Queen",
+			5: "Eiffel Tower Room-King",
+			6: "Eiffel Tower Room-Queen",
+			7: "Lyon Suite",
+			8: "Random name-8",
+			9: "Random name-9",
+			10: "Random name-10"
+		}
+		return names[random];
+	}
+
+	function getPrice() {
+		var random = Math.floor(Math.random()*10);
+		var price = {
+			0: "999.08",
+			1: "1243.23",
+			2: "1245.00",
+			3: "1008",
+			4: "932",
+			5: "980",
+			6: "1498",
+			7: "1376",
+			8: "1222",
+			9: "2344",
+			10: "999.08"
+		}
+		var p = parseFloat(price[random]);
+		return p;
+	}
+	function getLang(language) {
+		var lang = "en";
+		switch(language) {
+			case "cn":
+				lang = "1003";
+				break;
+			case "en":
+				lang = "1033";
+				break;
+			case "hk":
+				lang = "5124";
+				break;
+		}
+		return lang;
+	}
+
+	//1033: en, 5124: hk, 1003:cn
+	var lang = getRequestParam("lang");
+	//rooms: 1~5
+	var room = getRequestParam("room");
+	//property: parisianmacao, venetianmacao, holidayinn, conrad, sandsmacao
+	var property = getRequestParam("property");
+
+	if (room == "") {
+		room = 2;
+	}
+	for (var i = 1; i <= room; i++) {
+		var price = getPrice();
+		window["trackingObject" + i] = {
+			affiliation:'',
+			category:'NonPackage',
+			arriveDate: '01/12/2017',
+			departDate: '01/13/2017',
+			numAdults:2,
+			numChildren:0,
+			quantity: 1,
+			numRooms: 1,
+			pageID: '4',
+			pageName:'/Booking/ItineraryConfirmation',
+			referrer: 'booking.parisianmacao.com',
+			productName: 'PAPB',
+			sku: getRoomName(),
+			offerCode:  'PAPB',
+			orderId: generateTransactionNumber(property),
+			tax: '157.28',
+			total: price + 157.28,
+			unitPrice: price,
+			itineraryNo: '',
+			langID : getLang(lang)
+		}
+	}
+
+
+
+	</script>
+	<script type="text/javascript">(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/parisian-macao/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
+})();</script>
+</head>
+<body>
+
+</body>
+</html>
