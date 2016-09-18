@@ -1,0 +1,55 @@
+* { padding: 0px; margin: 0px;}
+
+body{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px;}
+@font-face {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    src: url('../fonts/lucida_grande-webfont.eot');
+    src: url('../fonts/lucida_grande-webfont.eot?iefix') format('eot'),
+         url('../fonts/lucida_grande-webfont.woff') format('woff'),
+         url('../fonts/lucida_grande-webfont.ttf') format('truetype'),
+         url('../fonts/lucida_grande-webfont.svg#webfontHE5ym36K') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    src: url('../fonts/nevis-webfont.eot');
+    src: url('../fonts/nevis-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nevis-webfont.woff') format('woff'),
+         url('../fonts/nevis-webfont.ttf') format('truetype'),
+         url('../fonts/nevis-webfont.svg#WebfontBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#headerwrapper {width:100%; height: 100px; text-align: center; background: url(../images/headerbgdropshadow.png) repeat-x 0 bottom; position: relative; z-index: 1}
+#contentwrapper{ width: 1000px; margin: 10px auto; position: relative; }
+.clear{ clear: both;}
+
+#content{ width: 100%; position: relative; background: url(../images/contentbg.png) repeat-y 0 0;}
+
+#content .eventname{ font-size: 18px; text-transform: uppercase; width: 477px; height: 35px; float:left;}
+#content .left-cont{ width: 715px; float:left; height:auto; position: relative; z-index: 10}
+
+#content .pagination{ width: 250px; float:left; vertical-align: middle;}
+#content .pagination a{ color: #333; text-decoration: none; vertical-align: middle;}
+#content .pagination a:hover{text-decoration: underline;}
+#content .pagination a.current-p{ font-weight: bold; text-decoration: underline;}
+#content .view-opt{ float:left; width: 135px; margin: 0px 0px 0px 40px;}
+#thumb-view, #thumb-view2{ display:block; background-color: #fff; background: url(../images/icon-thumbnail.png) no-repeat center center; width: 20px; height: 17px; border: 1px solid #ccc; float:left; margin: 0px 5px 0px 0px; padding: 2px 20px;}
+#list-view, #list-view2{ display:block; background-color: #fff; background: url(../images/icon-list.png) no-repeat center center; width: 20px; height: 17px; border: 1px solid #ccc; float:left; padding: 2px 20px;}
+#content .active1{ background-color: #ccc;}
+#content .page-view{ float: right; width: 76px;}
+
+#content .right-cont{ width: 190px; float: right; height:auto;}
+#content .sidebox{ border: 1px solid #aaa;}
+#content .sidebox h3{ background: #605a5c; font-weight: normal; color: #fff; padding: 2px 5px; text-transform:uppercase; font-size: 13px; }
+#content .s-itembox1{ padding: 3px;}
+#content .s-itembox2{ padding: 3px; border-top: 1px solid #aaa}
+#content .s-itembox3{ padding: 3px; border-top: 1px solid #aaa}
+#content .s-itembox4{ padding: 3px; border-top: 1px solid #aaa}
+#content .searchnow{ background: url(../images/searchnow-btn.png) no-repeat left top; width: 179px; height: 22px; display:block; margin: 0px 0px 5px;}
+#content .sidead1{ width: 190px; height: 120px; display:block; background: #666; margin: 10px auto 0px;}
+
+#content .title-h{ background:url(../images/title-h-bck.jpg) no-repeat left top; width: 704px; height: 53px;}
+
+select { padding: 2px; }

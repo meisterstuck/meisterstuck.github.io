@@ -1,0 +1,841 @@
+* { padding: 0px; margin: 0px;}
+/*
+body{ font-family: Tahoma, Geneva, sans-serif; font-size: 12px;background:#ffffff}
+*/
+
+/*div#contentwrapper{width:920px; overflow:hidden; position: absolute; left: 50%; top: 0; margin-left:-460px; z-index: 200; display: none;}*/
+div#contentwrapper div#header{background:url(../images/appformheaderbg.png) no-repeat 0 0; height: 78px; margin-top:16px;}
+div#contentwrapper div#header h1 {padding:12px 0 0 32px; height: 90px;}
+div#contentwrapper div#header h1 a {background: url(../images/logo.png) no-repeat 0 0; padding:20px 41px; text-indent: -9999px; display:block;width:50px;}
+div#contentwrapper div.headertitle { width: 100%; height: 77px; background: url(../images/header_line.png) no-repeat 50% 0; text-align: center;}
+div#contentwrapper div.headertitle h2 { width: 148px; height: 20px; padding-top:25px; margin:0 auto; background: url(../images/newaccounttext.png) no-repeat 0 25px; text-indent: -9999px;}
+div#contentwrapper div.headertitle h2.newaccounttextCN{ width: 148px; height: 20px; padding-top:25px; margin:0 auto; background: url(../images/newaccounttext_zh_CN.png) no-repeat 0 25px; text-indent: -9999px;}
+div#contentwrapper div.headertitle h2.newaccounttextTW{ width: 148px; height: 20px; padding-top:25px; margin:0 auto; background: url(../images/newaccounttext_zh_TW.png) no-repeat 0 25px; text-indent: -9999px;}
+
+div#contentwrapper div.headertitle h2.myaccounttext { background: url("../images/myaccounttitle.png") no-repeat scroll 0 25px;}
+div#contentwrapper div.headertitle h2.myaccounttextCN { background: url("../images/myaccounttitle_zh_CN.png") no-repeat scroll 0 25px;}
+div#contentwrapper div.headertitle h2.myaccounttextTW { background: url("../images/myaccounttitle_zh_TW.png") no-repeat scroll 0 25px;}
+
+/*div#content{color:#4e4e4e; background: url(../images/appformcontentbg.png) repeat-y 1px 0; width:100%; margin:0 auto; overflow:hidden; padding:10px 0 20px 0;}*/
+
+div#content h3 { font-size:14px;font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; padding:5px 0; color: #000;}
+div#leftpanel {float:left; width: 480px; /*overflow:hidden;*/}
+div#leftpanel { border-right:2px solid #ebebeb;padding-left:30px;}
+div#leftpanel li, div#rightpanel li {list-style-type:none;}
+div#leftpanel ul {padding:10px 0 5px 0; position: relative; z-index: 1; width: 100%;}
+div#leftpanel li {list-style-type:none;padding:3px 0; position: relative; clear: both; z-index: 0}
+div#leftpanel li label {float:left; width: 170px; font-weight: bold; padding:0 0 0 10px;}
+
+/* 06-09-2012 Update by webster - newbookflow, addon */
+div#leftpanel li table td {display: table-cell; line-height: 5px; }
+div#leftpanel li table td.Strong {background-color: #00FA9A; }
+div#leftpanel li table td.Fair {background-color: #1E90FF;}
+div#leftpanel li table td.Short, div#leftpanel li table td.Weak{background-color: #CD5C5C;}
+div#leftpanel li table td.null {background-color: #FFFFFF; }
+div#leftpanel li table {width: 180px; font-size:12px; float: left; padding: 1; border-spacing:0; border-collapse:collapse;}
+
+div#leftpanel li input {width: 250px; font-size:12px; background: url(../images/appinputtext.jpg) no-repeat 0 0; padding: 6px 2px; border: none; float: left;}
+div#leftpanel li input.medtext {width: 160px; background: url(../images/appinputextmedium.jpg) no-repeat 0 0;margin-left:5px;}
+div#leftpanel li input.smtext {width:90px; background: url(../images/appsmallinputext.jpg) no-repeat 0 0;float: none;}
+div#leftpanel li input.smtext_error {outline: 2px solid #FE1111;}		/*added by shenghou 20131007 - validate QAS address with postal code*/
+div#leftpanel li input.done {border: none;  font-weight: bold; border: none; background: none; }
+div#leftpanel li span.req { position: absolute; left: 0; top: 2px;}
+div#leftpanel li select.hidden { display: none;}
+div#leftpanel li div.selectdd {width:90px; height: 28px; float: left; background: url(../images/appselecttitle.jpg) no-repeat 0 0;}
+div#leftpanel li div.selectdd a { display: block; padding:3px 0 0 8px; font-size: 12px; text-decoration: none; color: #4e4e4e; }
+div#leftpanel li div.selectdd ul.select_list { position: absolute; width: 87px; background: #FFF; border:1px solid #c7c7c7; list-style-type: none; display: none; z-index: 999; margin: 0;cursor: pointer; height: auto;overflow: auto;padding: 0;}
+div#leftpanel li div.selectdd ul.select_list li {padding:5px 0;  padding-left: 10px; color: #333333; background-color: #f4f4f4; display: block; }
+div#leftpanel li div.selectdd ul.select_list li:hover, div#leftpanel li div.selectddul.select_list li.hover, div#leftpanel li div.selectdd  ul.select_list li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#leftpanel li div.selCon {width:90px; height: 28px; float: left; background: url(../images/appselectcontact.jpg) no-repeat 0 0;}
+div#leftpanel li div.selCon a { display: block; padding:3px 10px 0 0px; font-size: 12px; text-decoration: none; color: #4e4e4e; text-align: right; position: relative; }
+div#leftpanel li div.selCon a img { position: absolute; left: 5px; top:7px; border: none;}
+div#leftpanel li div.selCon div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#leftpanel li div.selCon ul.select_list_tel { position:relative;cursor: pointer;list-style-type: none; width: auto;}
+div#leftpanel li div.selCon ul.select_list_tel li { padding-left: 5px 0; color: #333333; background-color: #f4f4f4; display: block; }
+div#leftpanel li div.selCon ul.select_list_tel li img {padding-left: 5px;}
+div#leftpanel li div.selCon ul.select_list_tel li:hover, div#leftpanel li div.selectdd  ul.select_list_tel li.hover, div#leftpanel li div.selectdd  ul.select_list_tel li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+
+div#leftpanel li p.errormsg { float:left; padding: 0 0 0 180px; color: #fe1111; display: none;}
+div#leftpanel li.error input { /*border:1px solid #fe1111;*/ }
+div#leftpanel li.error label { color: #fe1111;}
+div#leftpanel li.error div.selectdd { /*border:1px solid #fe1111;*/}
+div#leftpanel li.error p.errormsg { display: block; }
+div#leftpanel li.error div.selHomeCon { /*border:1px solid #fe1111;*/}
+/* 14-09-2012 Added by webster - newbookflow, addon */
+div#leftpanel li.error div.selMobileCon { /*border:1px solid #fe1111;*/}
+/* 12-09-2012 Added by webster - newbookflow, addon, qas */
+div#leftpanel li p.err_ajaxhomeaddrresult { float:left; padding: 10px 0 0 180px; color: #fe1111; }
+div#leftpanel li p.err_ajaxbzaddrresult { float:left; padding: 10Px 0 0 180px; color: #fe1111;}
+div#leftpanel li p.err_ajaxotheraddrresult { float:left; padding: 10Px 0 0 180px; color: #fe1111;}
+
+/*
+div#leftpanel li input[readonly],
+div#leftpanel li input[readonly=readonly] {
+	background: none;
+}
+*/
+
+div#leftpanel li div#uniform-dd {width:55px; height: 25px; float: left; background: url(../images/appselectdd.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-dd span { position: absolute; top:5px; left: 10px;}
+div#leftpanel li div#uniform-dd select {width:55px; height: 25px;position: absolute; top:0px; left: 0px;color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-dd select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li div#uniform-mm {width:113px; height: 25px; float: left; background: url(../images/appselectmm.jpg) no-repeat 0 0; position: relative; margin-left: 7px;}
+div#leftpanel li div#uniform-mm span { position: absolute; top:5px; left: 10px;}
+div#leftpanel li div#uniform-mm select {width:113px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-mm select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li div#uniform-yy {width:72px; height: 25px; float: left; background: url(../images/appselectyy.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-yy span { position: absolute; top:5px; left: 10px;}
+div#leftpanel li div#uniform-yy select {width:72px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-yy select option {padding:1px 2px 1px 5px;color: #333333;}
+
+div#leftpanel li div#uniform-national {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-national span { position: absolute; top:5px; left: 10px;}
+div#leftpanel li div#uniform-national select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-national select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li div#uniform-residenceCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-residenceCountry span { position: absolute; top:5px; left: 10px;}
+div#leftpanel li div#uniform-residenceCountry select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-residenceCountry select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li div#uniform-secretQuestion1 {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-secretQuestion1 span { position: absolute; top:5px; left: 10px; width:225px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+div#leftpanel li div#uniform-secretQuestion1 select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-secretQuestion1 select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li div#uniform-secretQuestion2 {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-secretQuestion2 span { position: absolute; top:5px; left: 10px; width:225px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+div#leftpanel li div#uniform-secretQuestion2 select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-secretQuestion2 select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li.error div#uniform-national { /*border:1px solid #fe1111;*/}
+div#leftpanel li.error div#uniform-residenceCountry { /*border:1px solid #fe1111;*/}
+
+/* 17-09-2012 Added by webster - newbookflow, addon2 */
+div#leftpanel li div#uniform-gender {width:90px; height: 25px; float: left; background: url(../images/appselecttitle.jpg) no-repeat 0 0; position: relative;}
+div#leftpanel li div#uniform-gender span { position: absolute; top:3px; left: 8px;}
+div#leftpanel li div#uniform-gender select {width:90px; height: 25px; position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#leftpanel li div#uniform-gender select option {padding:1px 2px 1px 5px;color: #333333;}
+div#leftpanel li.error div#uniform-gender { /*border:1px solid #fe1111;*/}
+
+
+div#leftpanel div.addressblock {padding:0 0 0 0; border-top: 1px solid #bcbdbe; clear: both; width: 438px;}
+div#leftpanel div.addressblock div.hidediv { display: none;}
+div#leftpanel div.addressblock h3 a {color: #5a5a5a; text-decoration: none; display: block; background: url(../images/arrowupsprite.png) no-repeat 150px -20px;}
+
+a#contactdd { display: block; width: 18px; height:18px; background: url(../images/arrowupsprite.png) no-repeat 0px -20px; /*text-indent: -9999px;*/ position: absolute; right:22px; top:5px}
+a#contactdd.open { background-position:  0px 4px;}
+
+div#leftpanel div.addressblock h3 a.open {background-position:  150px 4px;}
+div#leftpanel div.addressblock li div.selCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0;}
+div#leftpanel div.addressblock li div.selCountry div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#leftpanel div.addressblock li div.selCountry a { display: block; padding:3px 10px 0 5px; font-size: 12px; text-decoration: none; color:#4e4e4e; position: relative; height:22px;}
+div#leftpanel div.addressblock li div.selCountry ul.select_list_country { width:auto; position:relative;cursor: pointer;list-style-type: none;}
+div#leftpanel div.addressblock li div.selCountry ul.select_list_country li {padding: 5px 0;  color: #333333; background-color: #f4f4f4; display: block; }
+div#leftpanel div.addressblock li div.selCountry ul.select_list_country li img {padding-left: 5px;}
+div#leftpanel div.addressblock li div.selCountry ul.select_list_country li:hover, div#leftpanel li div.selCountry  ul.select_list_country li.hover, div#leftpanel li div.selCountry  ul.select_list_country li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#leftpanel div.addressblock li a#home_changeval {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#leftpanel div.addressblock li a#bz_changeval    {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#leftpanel div.addressblock li a#other_changeval    {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+/* 16-10-2012 Updated by webster - newbookflow, addon4 */
+div#leftpanel div.addressblock li p.maillist {padding: 0 0 10px 170px; overflow: auto;}
+div#leftpanel div.addressblock li p.maillist div#uniform-mailist { width: 24px; float: left; padding:10px 0 0 10px;}
+div#leftpanel div.addressblock li p.maillist div#uniform-mailist span { display: block; position: relative; width: 24px; height: 22px; background: url(../images/package/inputcheckbox.png) no-repeat 0 0; }
+div#leftpanel div.addressblock li p.maillist div#uniform-mailist span.checked { background-position: 0 -26px}
+div#leftpanel div.addressblock li p.maillist div#uniform-mailist span.disabled { background-position: 0 -52px}
+div#leftpanel div.addressblock li p.maillist div#uniform-mailist span input {position: absolute; top: 0; left: 0;cursor: pointer}
+div#leftpanel div.addressblock li p.maillist em { float: left; padding:10px 0 0 5px; font-style: normal; width:225px;}
+div#leftpanel div.addressblock li p.maillist em.disabled { color: #D3D3D3;}
+
+
+div#leftpanel div.addressblock li em {display: block; padding:2px 0 2px 178px; float:left; font-style:normal;}
+div#leftpanel div.addressblock li a#homewithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#homewithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#bzwithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#bzwithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#otherwithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#otherwithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#leftpanel div.addressblock li a#confirm { display: block; width: 177px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 -41px; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#leftpanel div.addressblock li a.home_postalknown      {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.home_postalnotknown {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.home_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#leftpanel div.addressblock li a.bz_postalknown      {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.bz_postalnotknown {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.bz_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#leftpanel div.addressblock li a.other_postalknown      {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.other_postalnotknown {/*width: 100%;*/ clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#leftpanel div.addressblock li a.other_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#leftpanel div.addressblock li input {float: left;}
+div#leftpanel div.addressblock li p.errormsg { float:left; color: #fe1111; display: none;}
+div#leftpanel div.addressblock li.error div.selHomeCountry { /*border:1px solid #fe1111;*/}
+div#leftpanel div.addressblock li.error label { color: #fe1111;}
+div#leftpanel div.addressblock li.error p.errormsg { display: block; }
+/*added by shenghou 20131008 for loader bar */
+div#leftpanel div.addressblock li img.loader { float: left; padding-top: 10px; padding-left: 10px; display:none}		/*registration page*/
+
+div#leftpanel em {font-size:11px;}
+div#leftpanel li div.hint {
+    position: absolute;
+    right: -155px;
+    width: 160px;
+    margin-top: -4px;
+    padding: 10px 12px;
+    background: #b8d8f8;
+    border-radius: 5px;
+    font-size: 11px;
+    -moz-box-shadow:    0px 0px 3px 2px #e3e3e3;
+    -webkit-box-shadow: 0px 0px 3px 2px #e3e3e3;
+    box-shadow:         0px 0px 3px 2px #e3e3e3;
+    color: #4E4E4E;
+    display: none;
+}
+div#leftpanel div.hint img {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+}
+div#leftpanel li div.emailhint {
+    right: -120px;
+}
+
+div#leftpanel li div.unitnopdhint{
+	right: -34px;
+	margin-top: -22px;
+}
+
+div#leftpanel li div.homeaddhint,
+div#leftpanel li div.bzaddhint,
+div#leftpanel li div.otheraddhint{
+    top: -25px;
+    right: -236px;
+    width: 200px;
+
+}
+
+div#rightpanel {width:400px; float: right; padding-right:35px; font-family: Verdana, Arial, Helvetica, sans-serif;}
+div#rightpanel ul {position:relative; width: auto;}
+div#rightpanel ul li { padding: 10px 0;}
+div#rightpanel ul li div.theader { overflow: hidden; width: 100%;}
+div#rightpanel ul li div.theader div.checker {width: 24px; height: 22px; float: left;   position: relative;}
+div#rightpanel ul li div.theader div.checker span { width: 24px; height: 22px; display: block; position: absolute; top: 0; left: 0; background: url(../images/package/inputcheckbox.png) no-repeat 0 0;}
+div#rightpanel ul li div.theader div.checker span.checked {background-position: 0 -26px;}
+div#rightpanel ul li div.theader div.checker input { position: absolute; top: 0; left: 0; cursor: pointer;}
+div#rightpanel ul li div.theader h4 { padding:0 0 0 20px;}
+div#rightpanel ul li p {padding:5px 0 0 20px;}
+div#rightpanel ul li ul { list-style-type: disc; margin:0 0 0 35px; padding: 8px 0;}
+div#rightpanel ul li li { padding: 0;list-style-type: disc;}
+div#rightpanel a#submitapp {display: block; width: 92px; height: 36px;  background: url(../images/submitbutton.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div#rightpanel a#submitappCN {display: block; width: 92px; height: 36px;  background: url(../images/submitbutton_zh_cn2.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div#rightpanel a#submitappTW {display: block; width: 92px; height: 36px;  background: url(../images/submitbutton_zh_tw2.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+
+div#rightpanel ul li.error label  { color: #fe1111;}
+div#rightpanel ul li.error input { /*border:1px solid #fe1111;*/}
+div#rightpanel ul li.error p.errormsg  { color: #fe1111;}
+
+
+/*
+div#footer {background:url(../images/appformfooterbg.png) no-repeat 1px 0; width:100%; overflow: hidden; position: relative;}
+div#footer ul {float:right; padding:20px 60px 30px 0 ;}
+div#footer ul li {float:left; list-style-type:none; padding-right:10px; color:#bababa;}
+div#footer ul li a { text-decoration:underline; color:#4e4e4e; font-size:12px; }
+div#footer a#closeapp { display: block; width: 16px; height: 16px; background:url(../images/closelightbox.png) no-repeat 0 0; position: absolute; right: 20px; top: 20px; text-indent: -9999px;}
+*/
+
+div#contentcontainer {width:920px; overflow:hidden; position: absolute; left: 50%; top: 0; margin-left:-460px; z-index: 200;}
+div#contentcontainer div#header{background:url(../images/appformheaderbg.png) no-repeat 0 0; height: 78px; margin-top:16px;}
+div#contentcontainer div#header h1 {padding:12px 0 0 32px; height: 90px;}
+div#contentcontainer div#header h1 a {background: url(../images/logo.png) no-repeat 0 0; padding:20px 41px; text-indent: -9999px; display:block;width:50px;}
+div#contentcontainer div.headertitle { width: 100%; height: 77px; background: url(../images/header_line.png) no-repeat 0 0; text-align: center;}
+div#contentcontainer div.headertitle h2 { width: 134px; height: 18px; padding-top:25px; margin:0 auto; background: url(../images/myaccounttitle.png) no-repeat 0 25px; text-indent: -9999px;}
+div#content{color:#4e4e4e; /*background: url(../images/appformcontentbg.png) repeat-y 1px 0;*/ /*width:100%;*/ margin:0 auto;/* overflow:visible;*/ padding:0 0 20px 0; min-height: 550px;}
+div#contentcontainer ul li div.theader div.checker {width: 14px; height: 14px; float: left; position: relative;}
+div#contentcontainer ul li div.theader div.checker span { width: 14px; height: 14px; display: block; position: absolute; top: 0; left: 0; background: url(../images/checkboxremember.png) no-repeat 0 0;}
+div#contentcontainer ul li div.theader div.checker span.checked {background-position: 0 -18px;}
+div#contentcontainer ul li div.theader div.checker input { position: absolute; top: 0; left: 0; cursor: pointer;}
+div#contentcontainer ul li div.theader div.checker h4 { padding:0 0 0 20px;}
+div#contentcontainer a#updatesubcribe {display: block; width: 92px; height: 36px;  background: url(../images/submitbutton.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+
+
+/* 19-09-2012 Updated by webster - newbookflow, addon */
+div#notification { padding: 5px 0 5px 25px; font-size: 14px; font-weight: bold; color: #ff0000; position: relative; }
+
+div#aside { width: 190px; float: left;}
+div#aside ul {width: 173px; margin-left:17px; list-style-type: none;}
+div#aside ul li a { display: block;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; text-decoration: none; color: #4e4e4e; background: url(../images/activepagebg.png) no-repeat 0 -28px; padding:7px 0 7px 30px }
+div#aside ul li a.active {background-position: 0 0;}
+div#contentholder em {font-size:11px;}
+div#contentholder {width: 770px; float: left; border-left: 2px solid #eeeeee}
+div#contentholder div#myaccount {position: relative; width: auto; padding-left:35px;}
+div#contentholder div#myaccount h3 { padding: 5px 0 5px 25px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;}
+div#contentholder div#myaccount h3.title { background: url(../images/titlehbg.png) no-repeat 10px 0; }
+div#contentholder div#myaccount form { padding: 0 0 0 30px; clear: both;}
+div#contentholder div#myaccount form ul {padding:10px 0 5px 0; position: relative; z-index: 1;}
+div#contentholder div#myaccount form li {list-style-type:none; padding:5px 0; position: relative; width: 100%; clear: both;}
+div#contentholder div#myaccount form li label {float:left; width: 170px; font-weight: bold; padding:0 0 0 10px;}
+div#contentholder div#myaccount form li input {width: 246px; font-size:12px; background: url(../images/appinputtext.jpg) no-repeat 0 0; padding: 6px 2px 6px 7px; border: none; float: left; color: #333333;}
+/* 19-09-2012 Updated by webster - newbookflow, addon */
+div#contentholder div#myaccount form li input.medtext {width: 150px; background: url(../images/appinputextmedium.jpg) no-repeat 0 0;margin-left:5px;}
+div#contentholder div#myaccount form li input.smtext {width:90px; background: url(../images/appsmallinputext.jpg) no-repeat 0 0;float: none;} 
+div#contentholder div#myaccount form li input.smtext_error {outline: 2px solid #FE1111;}		/*added by shenghou 20131007 - validate QAS address with postal code*/
+div#contentholder div#myaccount form li input.done {border: none;  font-weight: bold; border: none; background: none; }
+div#contentholder div#myaccount form li span.req { position: absolute; left: 0; top: 2px;}
+div#contentholder div#myaccount form li select.hidden { display: none;}
+div#contentholder div#myaccount form li p.errormsg { clear: both; padding: 0 0 0 180px; margin-bottom: 0; color:#ff0000; display: none; }
+div#contentholder div#myaccount form li.error {color:#ff0000; }
+div#contentholder div#myaccount form li.error input {/*border: 1px solid #ff0000;*/}
+div#contentholder div#myaccount form li.error p.errormsg {display: block;}
+div#contentholder div#myaccount form li div#uniform-titlename {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-titlename span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-titlename select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-titlename select option {padding:1px 2px 1px 5px;color: #333333;}
+/* Added by shenghou 20131008 for loader image  */
+div#contentholder div#myaccount form li img.loader { float: left; padding-top: 10px; padding-left: 10px; display:none}		
+/* 06-09-2012 Update by webster - newbookflow, addon */
+div#contentholder div#myaccount form li table td {display: table-cell; line-height: 5px; }
+div#contentholder div#myaccount form li table td.Strong {background-color: #00FA9A; }
+div#contentholder div#myaccount form li table td.Fair {background-color: #1E90FF;}
+div#contentholder div#myaccount form li table td.Short, div#contentholder div#myaccount form li table td.Weak{background-color: #CD5C5C;}
+div#contentholder div#myaccount form li table td.null {background-color: #FFFFFF; }
+div#contentholder div#myaccount form li table {width: 180px; font-size:12px; float: left; padding: 1; border-spacing:0; border-collapse:collapse;}
+
+div#contentholder div#myaccount form li div.selHomeCon {width:90px; height: 28px; float: left; background: url(../images/appselectcontact.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form li div.selHomeCon a { display: block; padding:3px 10px 0 0px; font-size: 12px; text-decoration: none; color: #4e4e4e; text-align: right; position: relative; }
+div#contentholder div#myaccount form li div.selHomeCon a img { position: absolute; left: 8px; top:7px; border: none;}
+div#contentholder div#myaccount form li div.selHomeCon div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form li div.selHomeCon ul.select_list_tel { position:relative;cursor: pointer;list-style-type: none; width: 235px;}
+div#contentholder div#myaccount form li div.selHomeCon ul.select_list_tel li { padding: 5px 0; color: #333333; background-color: #f4f4f4; display: block; }
+div#contentholder div#myaccount form li div.selHomeCon ul.select_list_tel li img {padding-left:5px;}
+div#contentholder div#myaccount form li div.selHomeCon ul.select_list_tel li:hover, div#myaccount li div.selectdd  ul.select_list_tel li.hover, div#myaccount li div.selectdd  ul.select_list_tel li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#contentholder div#myaccount form li div.selMobileCon {width:90px; height: 28px; float: left; background: url(../images/appselectcontact.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form li div.selMobileCon a { display: block; padding:3px 10px 0 0px; font-size: 12px; text-decoration: none; color: #4e4e4e; text-align: right; position: relative; }
+div#contentholder div#myaccount form li div.selMobileCon a img { position: absolute; left: 8px; top:7px; border: none;}
+div#contentholder div#myaccount form li div.selMobileCon div.scrollblock  { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form li div.selMobileCon ul.select_list_tel { position:relative;list-style-type: none;cursor: pointer; width: 235px;}
+div#contentholder div#myaccount form li div.selMobileCon ul.select_list_tel li { padding: 5px 0; color: #333333; background-color: #f4f4f4; display: block; }
+div#contentholder div#myaccount form li div.selMobileCon ul.select_list_tel li img {padding-left:5px;}
+div#contentholder div#myaccount form li div.selMobileCon ul.select_list_tel li:hover, div#myaccount li div.selectdd  ul.select_list_tel li.hover, div#myaccount li div.selectdd  ul.select_list_tel li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+/* 19-09-2012 Added by webster - newbookflow, addon */
+div#contentholder div#myaccount form li.error div.selMobileCon { /*border:1px solid #fe1111;*/}
+div#contentholder div#myaccount form li div.selOffCon {width:90px; height: 28px; float: left; background: url(../images/appselectcontact.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form li div.selOffCon a { display: block; padding:3px 10px 0 0px; font-size: 12px; text-decoration: none; color: #4e4e4e; text-align: right; position: relative; }
+div#contentholder div#myaccount form li div.selOffCon a img { position: absolute; left: 8px; top:7px; border: none;}
+div#contentholder div#myaccount form li div.selOffCon div.scrollblock  { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form li div.selOffCon ul.select_list_tel { position:relative;list-style-type: none;cursor: pointer; width: 235px;}
+div#contentholder div#myaccount form li div.selOffCon ul.select_list_tel li { padding: 5px 0; color: #333333; background-color: #f4f4f4; display: block; }
+div#contentholder div#myaccount form li div.selOffCon ul.select_list_tel li img {padding-left:5px;}
+div#contentholder div#myaccount form li div.selOffCon ul.select_list_tel li:hover, div#myaccount li div.selectdd  ul.select_list_tel li.hover, div#myaccount li div.selectdd  ul.select_list_tel li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#contentholder div#myaccount form li div#uniform-dd {width:55px; height: 25px; float: left; background: url(../images/appselectdd.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-dd span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-dd select {width:55px; height: 25px;position: absolute; top:0px; left: 0px;color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-dd select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li div#uniform-mm {width:113px; height: 25px; float: left; background: url(../images/appselectmm.jpg) no-repeat 0 0; position: relative; margin-left: 7px;}
+div#contentholder div#myaccount form li div#uniform-mm span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-mm select {width:113px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-mm select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li div#uniform-yy {width:72px; height: 25px; float: left; background: url(../images/appselectyy.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-yy span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-yy select {width:72px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-yy select option {padding:1px 2px 1px 5px;color: #333333;}
+/* 17-09-2012 Added by webster - newbookflow, addon2 */
+div#contentholder div#myaccount form li.error div#uniform-dd { /*border:1px solid #fe1111;*/}
+div#contentholder div#myaccount form li.error div#uniform-mm { /*border:1px solid #fe1111;*/}
+div#contentholder div#myaccount form li.error div#uniform-yy { /*border:1px solid #fe1111;*/}
+
+div#contentholder div#myaccount form li div#uniform-national {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-national span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-national select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-national select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li div#uniform-residenceCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-residenceCountry span { position: absolute; top:5px; left: 10px;}
+div#contentholder div#myaccount form li div#uniform-residenceCountry select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-residenceCountry select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion1 {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion1 span { position: absolute; top:5px; left: 10px; width:225px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion1 select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion1 select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion2 {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion2 span { position: absolute; top:5px; left: 10px; width:225px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion2 select {width:254px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-secretQuestion2 select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form a#updatebtn {display: block; width: 92px; height: 36px;  background: url(../images/submitbutton.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div#contentholder div#myaccount form a#updatebtnCN {display: block; width: 177px; height: 36px;  background: url(../images/updateaccountbutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div#contentholder div#myaccount form a#updatebtnTW {display: block; width: 177px; height: 36px;  background: url(../images/updateaccountbutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+
+
+/* 14-09-2012 Added by webster - newbookflow, addon*/
+div#contentholder div#myaccount form li.error div#uniform-national { /*border:1px solid #fe1111;*/}
+div#contentholder div#myaccount form li.error div#uniform-residenceCountry { /*border:1px solid #fe1111;*/}
+
+/* 17-09-2012 Added by webster - newbookflow, addon2 */
+div#contentholder div#myaccount form li div#uniform-patron_title {width:90px; height: 25px; float: left; background: url(../images/appselecttitle.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-patron_title span { position: absolute; top:3px; left: 8px;}
+div#contentholder div#myaccount form li div#uniform-patron_title select {width:90px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-patron_title select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li.error div#uniform-patron_title { /*border:1px solid #fe1111;*/}
+
+div#contentwrapper2 div#uniform-patron_title {width:90px; height: 25px; float: left; background: url(../images/appselecttitle.jpg) no-repeat 0 0; position: relative;}
+div#contentwrapper2 div#uniform-patron_title span { position: absolute; top:3px; left: 8px;}
+div#contentwrapper2 div#uniform-patron_title select {width:90px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentwrapper2 div#uniform-patron_title select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentwrapper2 form#newPatronForm div.selectdd { /*border:1px solid #fe1111;*/}
+
+
+div#contentholder div#myaccount form li div#uniform-gender {width:90px; height: 25px; float: left; background: url(../images/appselecttitle.jpg) no-repeat 0 0; position: relative;}
+div#contentholder div#myaccount form li div#uniform-gender span { position: absolute; top:3px; left: 8px;}
+div#contentholder div#myaccount form li div#uniform-gender select {width:90px; height: 25px;position: absolute; top:0px; left: 0px; color: #333333;background-color: #f4f4f4; font-size: 12px;}
+div#contentholder div#myaccount form li div#uniform-gender select option {padding:1px 2px 1px 5px;color: #333333;}
+div#contentholder div#myaccount form li.error div#uniform-gender { /*border:1px solid #fe1111;*/}
+
+
+div#contentholder div#myaccount form div.addressblock {margin-top: 8px; border-top: 1px solid #bcbdbe; width: 438px; position: relative; }
+div#contentholder div#myaccount form div.addressblock h3 a {color: #5a5a5a; text-decoration: none; display: block; background: url(../images/arrowupsprite.png) no-repeat 150px -15px; padding:8px 0;}
+div#contentholder div#myaccount form div.addressblock h3 a.open {background-position:  150px 10px;}
+div#contentholder div#myaccount form div.addressblock p {padding:7px 0 4px 0; position: relative; clear: both; overflow: hidden;}
+div#contentholder div#myaccount form div.addressblock p label { float:left; width: 180px; font-weight: bold; padding:5px 0 0 0;}
+div#contentholder div#myaccount form div.addressblock p input {width: 250px; font-size:12px; background: url(../images/appinputtext.jpg) no-repeat 0 0; padding: 6px 2px 6px 7px; margin-top:5px; border: none; float: left; color: #333333;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry a { display: block; padding:3px 10px 0 5px; font-size: 12px; text-decoration: none; color:#4e4e4e; position: relative; height:22px;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry ul.select_list_country {width:auto; position:relative;cursor: pointer;list-style-type: none;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry ul.select_list_country li {padding:5px 0; color: #333333; background-color: #f4f4f4; }
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry ul.select_list_country li img {padding-left: 5px;}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry ul.select_list_country li:hover, div#contentholder div#myaccount form div.addressblock li div.selHomeCountry  ul.select_list_country li.hover, div#contentholder div#myaccount form div.addressblock li div.selHomeCountry  ul.select_list_country li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry a { display: block; padding:3px 10px 0 5px; font-size: 12px; text-decoration: none; color:#4e4e4e; position: relative; height:22px; }
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry ul.select_list_country {width:auto; position:relative;cursor: pointer;list-style-type: none;}
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry ul.select_list_country li {padding:5px 0; color: #333333; background-color: #f4f4f4; }
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry ul.select_list_country li img {padding-left: 5px;}
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry ul.select_list_country li:hover, div#contentholder div#myaccount form div.addressblock li div.selBzCountry  ul.select_list_country li.hover, div#contentholder div#myaccount form div.addressblock li div.selBzCountry  ul.select_list_country li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry {width:254px; height: 25px; float: left; background: url(../images/appselectlong.jpg) no-repeat 0 0;}
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry a { display: block; padding:3px 10px 0 5px; font-size: 12px; text-decoration: none; color:#4e4e4e; position: relative; height:22px;}
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry div.scrollblock { position: absolute; width: 253px; height: 110px; background: #f4f4f4; border:1px solid #c7c7c7;  display: none; z-index: 999; margin: 0;overflow: auto;padding: 0;}
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country {width:auto; position:relative;cursor: pointer;list-style-type: none;}
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country li {padding:5px 0; color: #333333; background-color: #f4f4f4; }
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country li img {padding-left: 5px;}
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country li:hover, div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country li.hover, div#contentholder div#myaccount form div.addressblock li div.selOtherCountry ul.select_list_country li.selected { background-color: #68aef8 !important; color: #FFF !important; }
+div#contentholder div#myaccount form div.addressblock li em {display: block; padding:2px 0 2px 178px;}
+div#contentholder div#myaccount form div.addressblock li span.req { position: absolute; left: 0; top: 2px;}
+div#contentholder div#myaccount form div.addressblock div.pwds { position: absolute; text-align: center;  width: 120px; top: 35px; right: 110px;}
+div#contentholder div#myaccount form a#updatebtn  { display: block; width: 177px; height: 35px;  background: url(../images/updateaccountbutton.png) no-repeat 0 0; text-indent: -9999px; margin:35px 0;}
+div#contentholder div#myaccount form div.addressblock a#changeval { display: block; width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#contentholder div#myaccount form div.addressblock p.maillist {padding: 0 0 10px 170px;}
+div#contentholder div#myaccount form div.addressblock p.maillist div#uniform-mailist { width: 24px; float: left; padding:10px 0 0 10px;}
+div#contentholder div#myaccount form div.addressblock p.maillist div#uniform-mailist span { display: block; position: relative; width: 24px; height: 22px; background: url(../images/package/inputcheckbox.png) no-repeat 0 0; }
+div#contentholder div#myaccount form div.addressblock p.maillist div#uniform-mailist span.checked { background-position: 0 -26px}
+/* 17-10-2012 Updated by webster - newbookflow, addon4 */
+div#contentholder div#myaccount form div.addressblock p.maillist div#uniform-mailist span.disabled { background-position: 0 -52px }
+div#contentholder div#myaccount form div.addressblock p.maillist div#uniform-mailist span input {position: absolute; top: 0; left: 0;cursor: pointer}
+div#contentholder div#myaccount form div.addressblock p.maillist em { float: left; padding:10px 0 0 5px; font-style: normal; width: 150px;}
+/* 17-10-2012 Updated by webster - newbookflow, addon4 */
+div#contentholder div#myaccount form div.addressblock p.maillist em.disabled { color: #D3D3D3;}
+
+
+div#contentholder div#myaccount form div.addressblock li a#home_changeval {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#contentholder div#myaccount form div.addressblock li a#bz_changeval    {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#contentholder div#myaccount form div.addressblock li a#other_changeval    {float:left;width: 105px; height: 41px;  background: url(../images/changebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px;}
+
+div#contentholder div#myaccount form div.addressblock li em {display: block; padding:2px 0 2px 178px; float:left; font-style:normal;}
+div#contentholder div#myaccount form div.addressblock li a#homewithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#homewithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#bzwithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#bzwithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#otherwithpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#otherwithoutpd_retrieve { float: left; display: block; width: 165px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 175px; }
+div#contentholder div#myaccount form div.addressblock li a#confirm { display: block; width: 177px; height: 41px;  background: url(../images/reconfirmbutton.png) no-repeat 0 -41px; text-indent: -9999px; margin:5px 0 5px 175px;}
+div#contentholder div#myaccount form div.addressblock li a.home_postalknown      {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.home_postalnotknown {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.home_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#contentholder div#myaccount form div.addressblock li a.bz_postalknown      {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.bz_postalnotknown {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.bz_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#contentholder div#myaccount form div.addressblock li a.other_postalknown      {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.other_postalnotknown {width: 100%; clear: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;} 
+div#contentholder div#myaccount form div.addressblock li a.other_notsg { float: left; display: block; padding: 0 0 0 178px; text-decoration: none; color: #2392db; font-weight: bold;}
+div#contentholder div#myaccount form div.addressblock li input {float: left;}
+div#contentholder div#myaccount form div.addressblock li p.errormsg { clear: left;  float:left; color: #fe1111; display: none; padding: 0 0 0 178px;}
+div#contentholder div#myaccount form div.addressblock li.error div.selHomeCountry { /*border:1px solid #fe1111;*/}
+div#contentholder div#myaccount form div.addressblock li.error label { color: #fe1111;}
+div#contentholder div#myaccount form div.addressblock li.error p.errormsg { display: block; }
+/* 12-09-2012 Added by webster - newbookflow, addon, qas */
+div#contentholder div#myaccount form div.addressblock li p.err_ajaxhomeaddrresult { clear: left; float:left; padding: 10px 0 0 178px; color: #fe1111; }
+div#contentholder div#myaccount form div.addressblock li p.err_ajaxbzaddrresult { clear: left; float:left; padding: 10px 0 0 178px; color: #fe1111;}
+div#contentholder div#myaccount form div.addressblock li p.err_ajaxotheraddrresult { clear: left; float:left; padding: 10px 0 0 178px; color: #fe1111;}
+
+div#contentholder div#myaccount form div.addressblock li input[readonly],
+div#contentholder div#myaccount form div.addressblock li input[readonly=readonly] {
+	/*opacity: 0.65;
+	filter: alpha(opacity = 65);*/
+	background: none;
+}
+div#contentholder div#myaccount form div.addressblock li div.selHomeCountry.readonlyeffect,
+div#contentholder div#myaccount form div.addressblock li div.selBzCountry.readonlyeffect,
+div#contentholder div#myaccount form div.addressblock li div.selOtherCountry.readonlyeffect{
+	background: none;
+}
+
+/*
+div#leftpanel div.addressblock li div.selHomeCountry.readonlyeffect,
+div#leftpanel div.addressblock li div.selBzCountry.readonlyeffect,
+div#leftpanel div.addressblock li div.selOtherCountry.readonlyeffect {
+	background: none;
+}
+*/
+
+div#contentholder div#myaccount form div.hint {
+    position: absolute;
+    right: 70px;
+    width: 160px;
+    margin-top: -20px;
+    padding: 10px 12px;
+    background: #b8d8f8;
+    border-radius: 5px;
+    font-size: 11px;
+    -moz-box-shadow:    0px 0px 3px 2px #e3e3e3;
+    -webkit-box-shadow: 0px 0px 3px 2px #e3e3e3;
+    box-shadow:         0px 0px 3px 2px #e3e3e3;
+    color: #4E4E4E;
+    display: none;
+}
+
+
+div#contentholder div#myaccount div.hint img {
+    position: absolute;
+    left: -11px;
+    top: 5px;
+}
+div#contentholder div#myaccount form div.addresshint {
+    top:5px;
+    right: 170px;
+}
+div#contentholder div#myaccount form div.passwordhint {
+    top: 40px;
+    right: 5px;
+    width: 75px;
+
+}
+div#contentholder div#myaccount form li a#pwdctl {display: block; padding: 0 0 0 180px; text-decoration: none; color: #2392db; font-weight: bold; cursor: pointer; cursor: hand;}
+
+div#contentholder div#div_id_transactions_container h3 { background: url(../images/titlehbg.png) no-repeat -10px 0; padding: 12px 0 20px 10px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;}
+
+div#contentholder div#myaccount form div.unitnopdhint {
+	right: -32px;
+}
+
+div#contentholder div#myaccount form div.homeaddhint,
+div#contentholder div#myaccount form div.bzaddhint,
+div#contentholder div#myaccount form div.otheraddhint{
+    top: -11px;
+    right: -236px;
+    width: 200px;
+
+}
+
+/**
+ * div_id_transactions_container
+ *
+ **/
+div#div_id_transactions_container {  }
+div#div_id_transactions_container p.options {padding:0 0 5px 0; border-bottom: 1px solid #bcbdbe; overflow: auto; }
+div#div_id_transactions_container p.options a.expand,
+div#div_id_transactions_container p.options a.collapse { float: right; color: #9c9c9c; text-decoration: none; padding: 5px 0 0 0;}
+div#div_id_transactions_container div.div_cls_transaction{ width:685px; margin:0 auto;  }
+div#div_id_transactions_container div.div_cls_transaction div.control {overflow: auto; padding: 5px 0;}
+div#div_id_transactions_container div.div_cls_transaction div.control a.iprint {display: none; float: left;}
+div#div_id_transactions_container div.div_cls_transaction div.control a.iprint img {border:none;}
+div#div_id_transactions_container div.div_cls_transaction div.control a.showprint {display: block;}
+div#div_id_transactions_container div.div_cls_transaction div.control a.td_cls_transaction_detail_control {background: url(../images/arrowupsprite.png) no-repeat 0 -22px; display: block; width: 18px; height: 18px; float: right; text-indent: -9999px;}
+div#div_id_transactions_container div.div_cls_transaction div.control a.open {background-position: 0 0;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_header { width:685px; background-color:#f4f4f4; color: #000; font-size:12px }
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_header { border-collapse: collapse; }
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_header td { padding:10px;border-bottom:1px solid #cccccc; }
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_header tr:last-child td { border:0; }
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_header td.tbl_cls_transaction_header_label{ width:150px;color: #4e4e4e; font-weight: bold; }
+
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail { border-collapse: collapse; width: 100%; position:relative; font-size:12px}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail thead th {vertical-align: top; text-align: center; padding: 5px;color: #747474}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail thead th span {font-size: 11px; font-weight: normal;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail thead th.side {text-align: left;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail tbody td { vertical-align: top;  text-align: center; color: #000; padding: 5px;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail tbody td.side {text-align: left}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail tbody td h4 { font-size: 12px;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail tfoot td  { vertical-align: top; border-bottom: 1px solid #bcbdbe;  text-align: center; color: #000; padding: 30px 5px 5px 5px; font-size: 12px;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail tfoot td.side {text-align: left;}
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail table.tbl_cls_transaction_detail_descriptions{  }
+div#div_id_transactions_container div.div_cls_transaction table.tbl_cls_transaction_detail table.tbl_cls_transaction_detail_description_promotions{  }
+ 
+div#contentholder div#div_id_subscribe h3 { background: url(../images/titlehbg.png) no-repeat 10px 0; padding: 12px 0 20px 25px;font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold;}
+
+div#div_id_transactions_container div.div_cls_transaction .collapse { display: none; }
+
+/**
+ * div_id_subscribe
+ *
+ **/
+div#div_id_subscribe{  padding-left: 33px; width: 710px; font-family: 'Lucida Sans', Tahoma, Geneva, sans-serif;}
+div#div_id_subscribe h4{ font-size:17px; margin:25px 0 25px 25px; font-family: 'Lucida Sans', Tahoma, Geneva, sans-serif; }
+div#div_id_subscribe p{ margin:0 0 10px 25px; width:600px; font-size: 13px }
+div#div_id_subscribe ul{ list-style:none; margin:0 0 0 25px; }
+div#div_id_subscribe ul li {padding:10px 0;}
+div#div_id_subscribe ul li li {padding: 0;}
+div#div_id_subscribe ul li div.theader { overflow: hidden; width: 100%; height: 30px}
+div#div_id_subscribe ul li div.theader h5 { font-size:14px; padding: 0 0 0 12px; font-family: Verdana, Arial, Helvetica, sans-serif; display: inline; }
+div#div_id_subscribe ul li div.theader div.checker {width: 24px; height: 22px; float: left; position: relative; margin-top:3px;}
+div#div_id_subscribe ul li div.theader div.checker span { width: 24px; height: 24px; display: block; position: absolute; top: 0; left: 0; background: url(../images/package/inputcheckbox.png) no-repeat 0 0;}
+div#div_id_subscribe ul li div.theader div.checker span.checked {background-position: 0 -26px;}
+div#div_id_subscribe ul li div.theader div.checker input { position: absolute; top: 0; left: 0; cursor: pointer;}
+div#div_id_subscribe ul li div.theader h4 { padding:0 0 0 20px;}
+div#div_id_subscribe ul li ul{ list-style:square; margin:0 0 10px 40px; font-size: 13px; }
+div#div_id_subscribe a#updatesubcribe { display: block; width: 177px; height: 35px;  background: url(../images/updateaccountbutton.png) no-repeat 0 0; text-indent: -9999px; margin:10px 0 10px 20px;}
+div#div_id_subscribe .items p{ margin-left: 38px}
+div#div_id_subscribe ul.items li ul{ margin-left: 60px }
+
+
+
+/* 11-10-2013 Added by webster - ocbc_fix */
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker {
+    float:left; 
+    height: 22px; 
+    padding:5px 0;
+    position: relative;
+    width:24px; 
+}
+
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker span { 
+    position: absolute; 
+    top:0; 
+    left: 0; 
+    display: block; 
+    width:24px; 
+    height: 22px;
+    background:url(../images/package/inputcheckbox.png) no-repeat 0 0;
+    z-index: 1 ;
+}
+
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker span.checked {
+	background-position: 0 -26px;
+}
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker input { 
+    position: absolute; 
+    top:0; 
+    left: 0; 
+    cursor: pointer;
+    width:24px; 
+    height: 22px;
+    z-index: 0;
+}
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker h4 { padding:0 0 0 0; }
+div.div_cls_block2 .div_cls_block2_block4 div.theader div.checker img.payicon { padding:0 0 0 0;}
+/*end 11-10-2013 Added by webster - ocbc_fix */
+
+
+div#modallightbox {background: url(../images/moralBackground.png); background-repeat:repeat; left: 0;position: fixed;top: 0;width: 100%; z-index: 199;}
+div#modallogincontainer { position: absolute; z-index: 200; width: 916px; left: 50%; top:20px; margin-left:-458px; background: url(../images/bgtopmodal.png) no-repeat 0 0; padding-top:14px;}
+div#modalcontents { width:100%; overflow:auto; background: url(../images/bgcontentmodal.png) no-repeat 0 100%; padding:20px 0 20px 0; overflow: auto;}
+div#modalcontents h2 {font-size: 18px; font-family: Verdana, Arial, Helvetica, sans-serif; padding-bottom: 5px;}
+div#modalcontents ul { list-style-type: none;} 
+/* 17-09-2012 updated by webster - newbookflow, addon2 */
+div#modalcontents div#oldaccount { float: left; width:454px; border-right:2px solid #e5e5e5;}
+div#modalcontents div#oldaccount form {padding:0 0 0 40px;}
+div#modalcontents div#oldaccount form li { overflow:auto; padding:6px 0; }
+div#modalcontents div#oldaccount form li label {font-family: Verdana, Arial, Helvetica, sans-serif; float: left; width: 118px; font-size: 13px; color: #4e4e4e; padding-top:2px;}
+div#modalcontents div#oldaccount form li input { background: url(../images/inputtext.jpg) no-repeat 0 0; width: 224px; padding:6px 5px; border: none;}
+div#modalcontents div#oldaccount form li p.errormsg {padding: 5px 55px 5px 117px; color: #fe1111; display: none;}
+div#modalcontents div#oldaccount form li.error label { color: #fe1111; }
+div#modalcontents div#oldaccount form li.error input { /*border:1px solid #fe1111;*/}
+div#modalcontents div#oldaccount form li.error p.errormsg { display: block;}
+div#modalcontents div#oldaccount form li.error span p.errormsg { display: block;}
+div#modalcontents div#oldaccount div.actions {position: relative; overflow: auto; padding:10px 0 25px 115px;}
+/*div#modalcontents div#oldaccount div.actions div#uniform-login { width: 90px; float: left; background: url(../images/accountlogin.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}*/
+div#uniform-login { width: 90px; float: left; background: url(../images/accountlogin.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+
+div#modalcontents div#oldaccount div.actions div#uniform-loginCN { width: 90px; float: left; background: url(../images/accountlogin_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#oldaccount div.actions div#uniform-loginTW { width: 90px; float: left; background: url(../images/accountlogin_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+
+
+div#modalcontents div#oldaccount div.actions div#uniform-remember { width: 14px; float: left; padding:10px 0 0 10px;}
+div#modalcontents div#oldaccount div.actions div#uniform-remember span { display: block; position: relative; width: 14px; height: 16px; background: url(../images/checkboxremember.png) no-repeat 0 0; }
+div#modalcontents div#oldaccount div.actions div#uniform-remember span.checked { background-position: 0 -18px}
+div#modalcontents div#oldaccount div.actions div#uniform-remember span input {position: absolute; top: 0; left: 0;cursor: pointer}
+div#modalcontents div#oldaccount div.actions label { float: left; padding:10px 0 0 5px; color: #4e4e4e}
+div#modalcontents div#oldaccount a.retrieve {text-decoration: none; color: #3299dd; margin:0 0 0 115px;}
+div#modalcontents div#oldaccount div.retrieveblock { padding: 0 0 0 115px; display: none;}
+div#modalcontents div#oldaccount div.retrieveblock li input {background: url(../images/inputtext.jpg) no-repeat 0 0; width: 224px; padding:6px 5px; border: none;}
+div#modalcontents div#oldaccount div.retrieveblock li label {padding:3px 50px 5px 0; color: #4e4e4e;}
+div#modalcontents div#oldaccount div.retrieveblock li p {padding:3px 50px 5px 0; color: #4e4e4e;}
+div#modalcontents div#oldaccount div.retrieveblock li p.errormsg {color: #fe1111; /*font-size:11px;*/}
+div#modalcontents div#oldaccount div.retrieveblock #uniform-uniform-continue {width: 104px; height:43px; float: left; background: url(../images/continue.png) no-repeat; padding:4px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#oldaccount div.retrieveblock #uniform-uniform-continueCN {width: 104px; height:40px; float: left; background: url(../images/continue_zh_cn.png) no-repeat; padding:4px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#oldaccount div.retrieveblock #uniform-uniform-continueTW {width: 104px; height:40px; float: left; background: url(../images/continue_zh_tw.png) no-repeat; padding:4px 0; text-indent: -9999px; cursor: pointer}
+
+/* 
+div#modalcontents div#oldaccount div.retrieveblock div#uniform-continue {width: 101px; float: left; background: url(../images/continue.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#oldaccount div.retrieveblock div#uniform-continueCN {width: 101px; float: left; background: url(../images/continue_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#oldaccount div.retrieveblock div#uniform-continueTW {width: 101px; float: left; background: url(../images/continue_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+*/
+div#modalcontents div#oldaccount div.retrieveblock li.error input { /*border:1px solid #fe1111;*/}
+div#modalcontents div#oldaccount div.retrieveblock li.error label { color: #fe1111; font-size:11px;}
+div#modalcontents div#oldaccount span.loader { padding-left:10px; display: none;}
+
+/* 17-09-2012 updated by webster - newbookflow, addon2 */
+div#modalcontents div#newaccount { float: left; width: 454px; position: relative;}
+div#modalcontents div#newaccount form { padding:0 0 0 40px;}
+div#modalcontents div#newaccount form li p { overflow:auto; padding:6px 0; }
+div#modalcontents div#newaccount form li p label {font-family: Verdana, Arial, Helvetica, sans-serif; float: left; width: 118px; font-size: 13px; color: #4e4e4e; padding-top:2px;}
+div#modalcontents div#newaccount form li p input { background: url(../images/inputtext.jpg) no-repeat 0 0; width: 224px; padding:6px 5px; border: none;}
+div#modalcontents div#newaccount form li.error p label { color: #fe1111;}
+div#modalcontents div#newaccount form li.error p input {/* border:1px solid #fe1111; */}
+div#modalcontents div#newaccount p.errormsg {padding: 0 40px 0 117px; color: #fe1111;}
+div#modalcontents div#newaccount div.actions {position: relative; overflow: auto; padding:5px 0 0 115px;}
+div#modalcontents div#newaccount div.actions div#uniform-create { width: 101px; float: left; background: url(../images/create.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#newaccount div.actions div#uniform-createCN { width: 101px; float: left; background: url(../images/create_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#newaccount div.actions div#uniform-createTW { width: 101px; float: left; background: url(../images/create_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalcontents div#newaccount div.actions span.loader { padding-left:10px; display: none;}
+
+div#modalcontents div#modalfootlinks {clear: both; padding: 10px 80px 10px 0; text-align: right;}
+div#modalcontents div#modalfootlinks a {color: #4e4e4e; text-decoration: none; border-bottom: 1px solid #d3d3d3}
+div#modalcontents a.closebox { position: absolute; bottom:30px; right:20px; display:block; width: 16px; height: 15px; text-indent: -9999px;  background: url(../images/closelightbox.png) no-repeat 0 0;}
+
+/**
+ * div_id_passwordsent_container
+ *
+ **/
+div#div_id_passwordsent_container{ position:absolute; width:100%; z-index:201; display:none;  }
+div#div_id_passwordsent_container div#div_id_passwordsent{ position:relative; margin:15px auto 0 auto; width:565px;   }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_top_bg{ background: url(../images/bg-pop-top-1.png) no-repeat; height:21px; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content{ background: url(../images/bg-pop-content-1.png) repeat-y; padding:10px 50px; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content h3{ font-size:18px; margin:0 0 15px 0; text-align: center; color: #666666; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content p{ margin:0 0 15px 0; line-height:130%; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content p a{ text-decoration:none; color:#2392db; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content ul#ul_id_passwordsent_content_menu1{ list-style:none; text-align:right; padding-right:20px; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content ul#ul_id_passwordsent_content_menu1 li{ display:inline; padding:0 10px; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content ul#ul_id_passwordsent_content_menu1 li:last-child{ border-left:1px solid #434343; padding-left:14px; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content ul#ul_id_passwordsent_content_menu1 li a{ color:#4e4e4e; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content ul#ul_id_passwordsent_content_menu1 li a:hover{}
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_content div#div_id_passwordsent_close{ float:right; margin-top:-14px; cursor:pointer; }
+div#div_id_passwordsent_container div#div_id_passwordsent div#div_id_passwordsent_bottom_bg{ background: url(../images/bg-pop-bottom-1.png) no-repeat; height:21px; line-height:1px; }
+
+/**
+ * div_id_success_container
+ *
+ **/
+div#div_id_success_container{ position:absolute; width:100%; z-index:201; }
+div#div_id_success_container div#div_id_success{ position:relative; margin:15px auto 0 auto; width:565px;   }
+div#div_id_success_container div#div_id_success div#div_id_success_top_bg{ background: url(../images/bg-pop-top-1.png) no-repeat; height:21px; line-height:1px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content{ background: url(../images/bg-pop-content-1.png) repeat-y; padding:10px 50px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content h3{ font-size:18px; margin:-20px 0 15px -30px; text-indent:-999999px; background: url(../images/logo.png) no-repeat; /*width:131px;*/ height:77px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content div#div_id_success_ribbon1{ background: url(../images/bg-ribbon-1.png) no-repeat; width:490px; height:43px; margin:-10px 0 10px -51px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content div#div_id_success_ribbon1CN{ background: url(../images/bg-ribbon-1_zh_cn.png) no-repeat; width:490px; height:43px; margin:-10px 0 10px -51px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content div#div_id_success_ribbon1TW{ background: url(../images/bg-ribbon-1_zh_tw.png) no-repeat; width:490px; height:43px; margin:-10px 0 10px -51px; }
+
+
+div#div_id_success_container div#div_id_success div#div_id_success_content p{ margin:0 0 15px 0; line-height:130%; }
+div#div_id_success_container div#div_id_success div#div_id_success_content p a{ text-decoration:none; color:#2392db; }
+div#div_id_success_container div#div_id_success div#div_id_success_content ul#ul_id_success_content_menu1{ list-style:none; text-align:right; padding-right:20px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content ul#ul_id_success_content_menu1 li{ display:inline; padding:0 10px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content ul#ul_id_success_content_menu1 li:last-child{ border-left:1px solid #434343; padding-left:14px; }
+div#div_id_success_container div#div_id_success div#div_id_success_content ul#ul_id_success_content_menu1 li a{ color:#4e4e4e; }
+div#div_id_success_container div#div_id_success div#div_id_success_content ul#ul_id_success_content_menu1 li a:hover{}
+div#div_id_success_container div#div_id_success div#div_id_success_content div#div_id_success_close{ float:right; margin-top:-14px; cursor:pointer; }
+div#div_id_success_container div#div_id_success div#div_id_success_bottom_bg{ background: url(../images/bg-pop-bottom-1.png) no-repeat; height:21px; line-height:1px; }
+
+
+
+.mandatory { display: inline-block; width: 13px; }
+.multiLabel { display: inline-block; }
+
+/* 17-10-2012 Updated by webster - newbookflow, addon4 */
+div#contentholder div#myaccount form div.chgPwd label { color: #9C9C9C; }
+div#contentholder div#myaccount form div.chgPwd div.hidediv { display: none;}
+div#contentholder div#myaccount form div.chgPwd h3 a {color: #5a5a5a; text-decoration: none; display: block; background: url(../images/arrowupsprite.png) no-repeat 150px -15px; padding:8px 0;}
+div#contentholder div#myaccount form div.chgPwd h3 a.open {background-position:  150px 10px;}
+
+/* added by shenghou - floating bubble for unsaved changes */
+div.unsavedChanges{font-size: 12px; color: black; display: none; background-color: #FFFFC6; left: 0; top: 0; height: 28px; width: 100%; text-align: center;  position: fixed; line-height: 28px; z-index:201; border-bottom-style:solid; border-width: 1px; }
+
+/* ozh - 20140213 - Venue Solicitation - BEGIN */
+div.preSubscribe a#submit {float:left;width: 105px; height: 41px;  background: url(../images/submitbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 150px;}
+div.preSubscribe a#submitCN {float:left;width: 105px; height: 41px;  background: url(../images/submitbutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 150px;}
+div.preSubscribe a#submitTW {float:left;width: 105px; height: 41px;  background: url(../images/submitbutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 150px;}
+
+div.preSubscribe a#cancel {float:left;width: 105px; height: 41px;  background: url(../images/cancelbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 100px;}
+div.preSubscribe a#cancelCN {float:left;width: 105px; height: 41px;  background: url(../images/cancelbutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 100px;}
+div.preSubscribe a#cancelTW {float:left;width: 105px; height: 41px;  background: url(../images/cancelbutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 100px;}
+
+div.venueSolicitation div.actions {position: relative; overflow: auto; padding:5px 0 0 0px;}
+div.venueSolicitation div.actions #search { width: 90px; float: left; background: url(../images/searchbutton.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div.venueSolicitation div.actions #searchCN { width: 90px; float: left; background: url(../images/searchbutton_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div.venueSolicitation div.actions #searchTW { width: 90px; float: left; background: url(../images/searchbutton_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+
+div.venueSolicitation div.actions #update { width: 90px; float: left; background: url(../images/updatebutton.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div.venueSolicitation div.actions #updateCN { width: 90px; float: left; background: url(../images/updatebutton_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div.venueSolicitation div.actions #updateTW { width: 90px; float: left; background: url(../images/updatebutton_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+
+div.venueSolicitation table.subscription_container{ color:#4E4E4E;font-size:13px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+div.venueSolicitation table.subscription_container a {color:black; font-weight:bold;}
+div.venueSolicitation table.subscription_container .venueHowTo  {color:black; }
+div.venueSolicitation div.venueHowToBg{background-color:#bdc3c7;}
+
+div.manageSubscription a{ color:#4E4E4E;font-weight:500;font-size:13px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+	
+div.venueSolicitation select{font-size:12px;}
+div.venueSolicitation input#search {border:0;float:left;width: 105px; height: 41px;  background: url(../images/searchbutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+div.venueSolicitation input#searchCN {border:0;float:left;width: 105px; height: 41px;  background: url(../images/searchbutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+div.venueSolicitation input#searchTW {border:0;float:left;width: 105px; height: 41px;  background: url(../images/searchbutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+
+div.venueSolicitation input#update {border:0;float:left;width: 105px; height: 41px;  background: url(../images/updatebutton.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+div.venueSolicitation input#updateCN {border:0;float:left;width: 105px; height: 41px;  background: url(../images/updatebutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+div.venueSolicitation input#updateTW {border:0;float:left;width: 105px; height: 41px;  background: url(../images/updatebutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin:5px 0 5px 0px;}
+
+.subscribe_color{ color:	#4E4E4E;font-weight:normal;font-size:13px;font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+table.checkTxn{
+	background-color:#F4F4F4;
+	width:685px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: 	#4E4E4E;
+}
+
+table.checkTxn .ccDetails{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;	
+}
+
+table.checkTxn tbody tr td{
+	border-bottom: none;
+	padding: 7px;
+	font-size:12px;
+}
+
+table.checkTxn input {
+   /* background: url("../images/appinputtext.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+   /* border: medium none;*/
+    color: #333333;
+    float: left;
+    font-size: 12px;
+    padding: 3px 2px 6px 7px;
+    width: 200px;
+}
+
+
+
+table.checkTxn div.selectedTxnNum select {
+
+    color: #333333;
+    font-size: 12px;
+    height: 25px;
+    left: 0;
+    top: 0;
+    width: 200px;
+}
+
+/* ozh - 20140213 - Venue Solicitation - END */
+div.div_cls_transaction .requiredField{color:red}
+div.div_cls_transaction div.actions {position: relative; overflow: auto; padding:5px 0 0 0px;}
+
+div.div_cls_transaction div.actions a#txnRetrieve {display: block; width: 100px; height: 36px;  background: url(../images/retrievebutton.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div.div_cls_transaction div.actions a#txnRetrieveCN {display: block; width: 100px; height: 36px;  background: url(../images/retrievebutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div.div_cls_transaction div.actions a#txnRetrieveTW {display: block; width: 100px; height: 36px;  background: url(../images/retrievebutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+
+div.div_cls_transaction div.actions a#txnReset {display: block; width: 100px; height: 36px;  background: url(../images/resetbutton.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div.div_cls_transaction div.actions a#txnResetCN {display: block; width: 100px; height: 36px;  background: url(../images/resetbutton_zh_cn.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+div.div_cls_transaction div.actions a#txnResetTW {display: block; width: 100px; height: 36px;  background: url(../images/resetbutton_zh_tw.png) no-repeat 0 0; text-indent: -9999px; margin: 10px 0 0 0}
+
+/* sisticcaptcha styles */
+input#sisticcaptcha_response { width:90px; font-size:12px; background: url(../../images/appinputtext.jpg) no-repeat 0 0; padding: 6px 2px; border: none; margin: 3px 0px 3px 0px;}

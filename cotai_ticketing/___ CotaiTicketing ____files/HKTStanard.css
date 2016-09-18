@@ -1,0 +1,20 @@
+A.NavMast {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 8pt;
+    COLOR: #F6EC4D;
+    TEXT-DECORATION: none
+}
+
+P.footer {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #003366;
+    TEXT-DECORATION: none
+}
+
+A.footer {
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    FONT-SIZE: 10pt;
+    COLOR: #003366;
+    TEXT-DECORATION: none
+}

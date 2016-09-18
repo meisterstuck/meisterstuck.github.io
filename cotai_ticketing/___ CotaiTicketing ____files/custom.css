@@ -1,0 +1,113 @@
+.ui-datepicker td { padding: 0; vertical-align: top}
+
+/* .month-title */
+.ui-datepicker-month, .ui-datepicker-year {text-align: center; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; font-weight:bold; text-transform:uppercase; line-height: 18px; position:relative;}
+
+/* .calendar-mode */
+.ui-datepicker{ webkit-box-shadow: 0px 0px 3px 1px #d5d5d5; box-shadow: 0px 0px 3px 1px #d5d5d5; background: #f1f1f1; width: 530px; height: auto; display:block; padding: 20px 40px; margin: 10px 0px 0px; -webkit-border-radius: 5px; border-radius: 5px; }
+
+/* .cal-dates li a.* */
+ ui-datepicker-week-end {webkit-box-shadow: 0px 0px 3px 1px #d5d5d5; box-shadow: 0px 0px 3px 1px #d5d5d5;  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; display:block; color: #333; text-decoration: none; font-weight: bold; width: 66px; margin: 4px; text-align: center; padding: 9px 0; background: #f5f5f5 url(../images/date.png)  repeat-x left top; }
+.cal-dates li a.blue-d{ background:url(../images/date-blue.png) repeat-x 0 0; color: #fff; text-shadow: #333 1px 1px 2px;}
+.cal-dates li a.blue-d:hover {background-position:0 -38px;}
+.cal-dates li a.black-d {background: url(../images/date-blue.png) repeat-x 0 0;color: #FFFFFF;text-shadow: 1px 1px 2px #333333;}
+.cal-dates li a.yellow-d {background-position:0 -76px;}
+.cal-dates li a.yellow-d:hover {background-position:0 -76px;}
+.cal-dates li.currentdate {background:url(../images/date-tip-arrow.png) no-repeat 50% 98%; }
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { webkit-box-shadow: 0px 0px 3px 1px #d5d5d5; box-shadow: 0px 0px 3px 1px #d5d5d5;  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; display:block; color: #333; text-decoration: none; font-weight: bold; width: 66px; margin: 4px; text-align: center; padding: 9px 0; background: #f5f5f5 url(../images/date.png)  repeat-x left top; border: none;}
+
+
+.ui-widget-content { border: none; }
+.ui-datepicker .blue-d a { background:url(../images/date-blue.png) repeat-x 0 0; color: #fff; text-shadow: #333 1px 1px 2px;}
+.ui-datepicker .blue-d a:hover {background-position:0 -38px;}
+.ui-datepicker .yellow-d a{background-position:0 -76px;color: #505050; font-weight:bold; text-shadow: 1px 1px 1px #FFFFFF}
+.ui-datepicker .yellow-d a:hover {background-position:0 -76px;}
+
+.sch div.radio span.timeselector { position: absolute; top:0; left: 0; display: block;width:24px; height: 22px;background: url(../images/radiobutton.png) no-repeat 0 -5px; position: relative; }
+
+/*.selectedrow li {padding:0 0 8px 0;}*/
+
+.ui-widget-header { border: none; background: none; color: #222222; font-weight: normal; }
+
+.ui-datepicker th { font-weight: normal; }
+
+.ui-datepicker-title {
+    background: url("../images/line-down.png") repeat-x scroll left bottom transparent;
+    display: block;
+    padding: 0 0 15px;
+}
+
+td.currentdate {background:url(../images/date-tip-arrow.png) no-repeat 50% 100%; height:50px; }
+
+#ui-datepicker-div { display: none; }
+#curr { font-size:12px; }
+
+
+div#headerwrapper div#header {
+/*    background: url("../images/appformheaderbg.png") no-repeat scroll 0 0 transparent;*/
+    height: 78px;
+    margin-top: 16px;
+}
+
+div#headerwrapper div#header h1 {
+    height: 90px;
+    padding: 12px 0 0 32px;
+}
+
+div#headerwrapper div#header h1 a {
+    background: url("../images/logo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 20px 41px;
+    text-indent: -9999px;
+    width: 50px;
+}
+
+#headerwrapper {
+	height: 100px;
+}
+
+.overviewLoading {
+	display: none; 
+	float:left; 
+	width:100%; 
+	text-align:center; 
+	padding-top:150px;
+}
+
+.detailLoading {
+	display: none; 
+/*	float:left; */
+	width:100%; 
+	text-align:center; 
+	padding-top:105px;
+	height: 150px;
+}
+
+.ticketTypeLoading {
+	display: none; 
+	width:99%; 
+	text-align:center; 
+	padding-top:105px;
+	height: 150px;
+}
+
+.step5content {
+	display: none;
+}
+
+.ui-datepicker-next .ui-icon { background: url("../images/arrow.png") no-repeat scroll right center transparent; width:16px; height:16px;}
+.ui-datepicker-prev .ui-icon { background: url("../images/arrow_left.png") no-repeat scroll right center transparent; width:16px; height:16px;}
+.ui-state-disabled .ui-icon { background: none; };
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span { margin-left: -10px;}
+.pchart td { text-align: right; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { background: none; border: none; }
+.ui-datepicker .ui-datepicker-next-hover { right: 2px; top: 2px; }
+.ui-datepicker .ui-datepicker-prev-hover { left: 2px; top: 2px; }
+
+.viewfromseatbtn { width:105px; float:right; }
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled { opacity: .50; filter:Alpha(Opacity=50); background-image: none; }
+.ui-icon { display: block; text-indent: -99999px; overflow: hidden; background-repeat: no-repeat; }
