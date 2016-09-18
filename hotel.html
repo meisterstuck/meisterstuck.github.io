@@ -11,13 +11,43 @@
 			background: #708090;
 			font-family: Tahoma;
 		}
+		.clear {
+		  *zoom: 1;
+		}
+		.clear:before, .clear:after {
+		  content: "";
+		  display: table;
+		}
+		.clear:after {
+		  clear: both;
+		}
+		h1 {
+			margin: 20px auto;
+			padding: 1%;
+			width: 48%;
+			background: #1a182d;
+			border-radius: 5px;
+			color: #fff;
+		}
 		ul {
+			margin: 20px auto;
+			padding: 2%;
+			width: 46%;
+			background: #1a182d;
 			list-style: none;
+			border-radius: 5px;
+			color: #fff;
 		}
 		ul a {
-			color: #000;
+			color: #fff;
 			font-weight: bold;
 			text-decoration: underline;
+		}
+		ul a:hover {
+			color: #2e74a9;
+		}
+		ul a:before {
+			content: "> ";
 		}
 		ul.others>li {
 			margin: 0 40px 0 0;
@@ -26,12 +56,12 @@
 		ul li label {
 			margin: 0 0 20px 0;
 			display: block;
-			color: #0004ff;
+			color: #7778c7;
 			font-size: 14px;
 		}
 		ul li label>span {
 			font-weight: bold;
-			color: #5a00ff;
+			color: #868692;
 		}
 		p {
 			font-size: 16px;
@@ -42,6 +72,7 @@
 			text-indent: 20px;
 			font-weight: bold;
 			display: block;
+			color: #7778c7;
 		}
 		ol {
 			margin: 0 0 20px 0;
@@ -52,10 +83,10 @@
 </head>
 <body>
 	<h1>You can modify the request parameters of the url, available options:</h1>
-	<ul class="others">
+	<ul class="others clear">
 		<li>
 			<p>
-				1. language: <br>
+				1. language: <br><br><br>
 				<span class="p">lang</span>
 			</p>
 			<ol>
@@ -66,7 +97,7 @@
 		</li>
 		<li>
 			<p>	
-				2. suite numbers(tracking objects number): <br>
+				2. suite numbers<br>(tracking objects number): <br><br>
 				<span class="p">room</span>
 			</p>
 			<ol>
@@ -79,7 +110,7 @@
 		</li>
 		<li>
 			<p>
-				2. hotel property names: <br>
+				3. hotel property names: <br><br><br>
 				<span class="p">property</span>
 			</p>
 			<ol>
@@ -91,19 +122,18 @@
 			</ol>
 		</li>
 	</ul>
-	<div style="clear: both;"></div>
-	<h1>Example entrance:</h1>
+	<h1>Example entrances:</h1>
 	<ul>
 		<li>
-			<a href="confirmation.html" target="_blank">> Default</a>
+			<a href="confirmation.html" target="_blank">Default</a>
 			<label>confirmation.html</label>
 		</li>
 		<li>
-			<a href="confirmation.html?lang=cn&room=3&property=parisianmacao" target="_blank">> Simple chinese, 4 rooms, Parisian Macao</a>
+			<a href="confirmation.html?lang=cn&room=3&property=parisianmacao" target="_blank">Simple chinese, 4 rooms, Parisian Macao</a>
 			<label>confirmation.html<span>?</span>lang=cn<span>&</span>room=3<span>&</span>property=parisianmacao</label>
 		</li>
 		<li>
-			<a href="confirmation.html?lang=hk&room=5&property=venetianmacao" target="_blank">> Traditional chinese, 5 rooms, Venetian Macao</a>
+			<a href="confirmation.html?lang=hk&room=5&property=venetianmacao" target="_blank">Traditional chinese, 5 rooms, Venetian Macao</a>
 			<label>confirmation.html<span>?</span>lang=hk<span>&</span>room=5<span>&</span>property=venetianmacao</label>
 		</li>
 	</ul>
