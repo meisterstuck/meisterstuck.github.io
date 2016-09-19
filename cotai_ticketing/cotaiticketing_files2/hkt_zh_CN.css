@@ -1,0 +1,1302 @@
+
+a:active	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666; font-weight: normal;text-decoration: none}
+a:link 		{font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666; font-weight: normal;text-decoration: none}
+a:hover 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666; font-weight: normal;text-decoration: underline}
+a:visited 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #666666; font-weight: normal;text-decoration: none}
+
+.body_textitalic {
+	color: #0066CC;
+	font:  11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+.promo_header {
+	FONT-SIZE: 15px; COLOR: #ff9900; LINE-HEIGHT: 1.2em; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:left; vertical-align:middle
+}
+
+h3 {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.normalTxt { font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+.buyticket1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+
+.body1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height:1.2em;
+	color: #676767;
+	vertical-align:top
+}
+
+.body1 a:active	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: none;text-decoration: none;}
+.body1 a:link 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: none;text-decoration: none;}
+.body1 a:hover 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: none;text-decoration: underline;}
+.body1 a:visited 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: none;text-decoration: none;}
+
+.nav_bottom1 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #0066CC;
+}
+.copyright {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #999999;
+}
+.body2 {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #676767;
+}
+.booking_title {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 16px; PADDING-BOTTOM: 0px; COLOR:#0066cb; PADDING-TOP: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; line-height:15px; TEXT-ALIGN: left
+}
+.small_shopping_cart_text {
+	PADDING-RIGHT: 0px; FONT-SIZE: 10px; FLOAT: right; TEXT-TRANSFORM: none; COLOR: #0066cb; PADDING-TOP: 5px; FONT-STYLE: normal; font-family: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: right
+}
+.booking_event_header {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN-LEFT: 10px; TEXT-TRANSFORM: none; COLOR:#333333; LINE-HEIGHT: 1.5em; FONT-STYLE: normal; font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.ticketing_table_booking {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 11pt; PADDING-BOTTOM: 5px; COLOR:#333333; LINE-HEIGHT: 1.25em; PADDING-TOP: 5px; font-family: Verdana, Arial, Helvetica, sans-serif; text-align:left
+}
+
+.ticketing_table_cat {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; VERTICAL-ALIGN: middle; COLOR: #ffffff; LINE-HEIGHT: 1.2em; FONT-STYLE: normal; font-family: Verdana, Arial, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+
+.table_pcat_alias {
+
+    background-color: #8bc7eb;
+    height: 20px;
+}
+
+.table_pcat_num {
+     
+    background-color: #5ab0e3;
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.info_title {
+    PADDING-RIGHT: 5px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 16px; PADDING-BOTTOM: 5px; COLOR:#333333; LINE-HEIGHT: 1.5em; PADDING-TOP: 5px; font-family: Verdana, Arial, Helvetica, sans-serif color:#0366cc
+}
+
+tr.errmsg  {
+     font-size: 12px;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     color: #FF0000;
+     text-decoration: none;
+     text-align: left;
+     vertical-align: top;
+     padding:3px;
+     margin:0px;
+}
+
+tr.errmsg_border  {
+     background-color: #FFFFFF;
+     font-size: 15px;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-weight: bold;
+     color: #000000;
+     text-decoration: none;
+     text-align: left;
+     vertical-align: top;
+     padding:3px;
+     margin:0px;
+     border-color: #FF0000;
+     border-width: 2px;
+}
+
+.errmsg_newtable {
+    border-color: red; 
+    border-width: 5px;
+    -moz-box-sizing: border-box;
+}
+
+.errmsg_spacing {
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.errmsg_normal {
+     background-color: #FFFFFF;
+     font-size: 12px;
+     font-family: Verdana, Arial, Helvetica, sans-serif;
+     font-weight: normal;
+     color: #000000;
+     text-decoration: none;
+     text-align: left;
+     vertical-align: top;
+     padding:3px;
+     margin:0px;
+}
+
+.pricechart_table {
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    width: 950px;
+    border-right-color: #f0f0f0;
+    border-left-color: #f0f0f0;
+    border-bottom-color: #f0f0f0;
+    border-top-color: #f0f0f0;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: white;
+}
+
+.pricechart_table td {
+    border-collapse:collapse;
+    border-spacing:0;
+    border-right-color: #f0f0f0;
+    border-left-color: #f0f0f0;
+    border-bottom-color: #f0f0f0;
+    border-top-color: #f0f0f0;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+}
+
+.ticketing_table_timedate {	
+   font-family: Verdana, Arial, Helvetica, sans-serif;	
+   font-size: 11pt;	
+   line-height: 1.25em;	
+   font-weight: bold;	
+   color: #ffffff;	
+   padding: 5px;   
+   margin-left: 15px;
+   text-align: left;
+   text-align:center
+}
+
+.ticketing_table_cells0 {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 3px;
+   font-weight: bold;
+   color:#333333;
+   text-align: center;
+}
+
+
+.ticketing_table_cells1 {
+   border-right-width: 1px;
+   border-right-style: solid;
+   border-right-color: #f8f8f8;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 3px;
+   font-weight: bold;
+   color:#333333;
+   text-align: center;
+   background-color:#deeff9
+}
+
+.cart_table_cells1 {
+   border-right-width: 1px;
+   border-right-style: solid;
+   border-right-color: #f8f8f8;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 3px;
+   font-weight: bold;
+   color:#333333;
+   text-align: center;
+   background-color:#ffffff
+}
+
+.ticketing_table_cells2 {
+	
+   border-right-width: 1px;
+	
+   border-right-style: solid;
+	
+   border-right-color: #f8f8f8;
+	
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+   font-size: 11px;
+	
+   font-style: normal;
+	
+   line-height: 1.2em;
+	
+   vertical-align: middle;
+	
+   padding: 3px;
+	
+   font-weight: bold;
+	
+   color:#ffffff;
+	
+   text-align: center;
+	
+   background-color:#5ab0e3
+}
+
+
+.ticketing_table_cells2 a{
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px; font-style: normal;
+  font-weight: bold; color:#ffffff;
+  text-align: center; text-decoration:none 
+} 
+  
+.ticketing_table_cells2 a:link{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; font-style: normal;
+    color:#ffffff;
+    text-decoration:none
+ } 
+ 
+.ticketing_table_cells2 a:hover{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px; font-style: normal;
+    color:#FFFF00;
+    text-decoration:none
+}
+
+.cart_total {
+	
+   border-right-width: 1px;
+	
+   border-right-style: solid;
+	
+   border-right-color: #f8f8f8;
+	
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+   font-size: 12px;
+	
+   font-style: normal;
+	
+   line-height: 1.5em;
+	
+   vertical-align: middle;
+	
+   padding: 5px;
+	
+   font-weight: bold;
+	
+   color:#FFFF66;
+	
+   text-align: center;
+}
+
+.cart_total_grandtotal {
+    font-size: 20px;
+    color: #000000;
+}
+
+.ticketing_table_lastrow {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 3px;
+   font-weight: bold;
+   color: #333333;
+   border-bottom-width: 1px;
+   border-bottom-style: solid;
+   border-bottom-color: #f8f8f8;
+   text-align: center;
+   margin-left:  15px;
+   margin-right: 15px;
+}
+
+
+.ticketing_legion {
+	
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+   font-size: 12px;
+	
+   font-style: normal;
+	
+   line-height: 1.2em;
+	
+   vertical-align: middle;
+	
+   padding: 3px;
+	
+   font-weight: bold;
+	
+   color: #333333;
+   width: 70px;
+	
+   text-align: left;
+}
+
+.status_limited {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 0px;
+   font-weight: bold;
+   color: #663300;
+   margin-left:  10px;
+   margin-right: 10px;
+}
+
+.status_singleseat {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: 1.2em;
+	vertical-align: middle;
+	padding: 0px;
+	font-weight: bold;
+	color: #FF00FF;
+}
+
+.status_soldout {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  line-height: 1.2em;
+  vertical-align: middle;
+  padding: 0px;
+  font-weight: bold;
+  color: #FF0000;
+  margin-left:  10px;
+  margin-right: 10px;
+}
+
+.status_avail {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   font-style: normal;
+   line-height: 1.2em;
+   vertical-align: middle;
+   padding: 0px;
+   font-weight: bold;
+   color: #000000;
+   margin-left:  10px;
+   margin-right: 10px;
+}
+
+.ticketing_table_priceclass_cell {
+
+   font-family: Verdana, Arial, Helvetica, sans-serif;   
+   font-weight: bold;
+   font-size: 11px;
+   text-align: left;
+   vertical-align: middle;
+   color:#333333;
+   margin-left:  10px;
+   padding-left:10px;
+   padding:5px
+}
+
+.booking_steps {
+    background-color: #deeff9;
+	color:#333333;
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-right: 15px;    
+    padding-left: 5px; 
+}
+
+.booking_steps0 {
+    background-color: #5ab0e3;
+	color:#FFFFFF;
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;   
+    margin-right: 15px;    
+    padding-left: 5px; 
+}
+
+.booking_title_text {	
+  font-family: Verdana, Arial, Helvetica, sans-serif;	
+  font-size: 14px;
+  font-weight:bold;
+  color:#FFFFFF;
+  background-color: #8bc7eb;
+  padding: 5px;	
+  text-align: left;
+}
+
+.booking_table td {
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.booking_table {
+    text-align: left;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.2em;
+    background-color: #FFFFFF;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+.newsletter_table td {
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.newsletter_table {
+    text-align: left;
+    vertical-align: middle;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.2em;
+    background-color: #FFFFFF;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-color: white;
+    border-top-color: white;
+}
+
+.time_table {
+    text-align: left;
+    vertical-align: middle;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 1.2em;
+    background-color: #FFFFFF;    
+    padding: 3;
+}
+
+.cart_expiry_table td {
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #FF9933;
+    border-left-color: #FF9933;
+    border-bottom-color: #FF9933;
+    border-top-color: #FF9933;
+}
+
+.cart_expiry_table {    
+    background-color:#FF9933;
+    width: 220px;
+    border-spacing:0;
+    font-size: 11px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-style: normal;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-indent: 2px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    border-top-width: 2px;
+    border-right-color: #FF9933;
+    border-left-color: #FF9933;
+    border-bottom-color: #FF9933;
+    border-top-color: #FF9933;
+}
+
+.cart_expiry_remaining_time {
+    background-color:#FF9933;
+    width: 200px;
+    padding: 3px;
+	margin: 3px;
+    border-collapse:collapse;
+    border-spacing:0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #ffffff;
+    font-size: 10pt;
+    font-weight: bold;
+    font-style:normal;
+    text-align:center;   
+}
+
+.booking_red_text {	
+   font-family: Verdana, Arial, Helvetica, sans-serif;	
+   font-size: 10px;	
+   font-style: normal;	
+   line-height: 1.5em;	
+   color:#000000;
+}
+
+.bluelinks a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color:#3399FF;
+  }
+  
+.bluelinks a:active	{font-family: Verdana, Arial, Helvetica, sans-serif; color:#3399FF; font-weight: normal;text-decoration:none}
+.bluelinks a:link 		{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: normal;text-decoration:none}
+.bluelinks a:hover 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #3399FF; font-weight: normal;text-decoration:underline}
+.bluelinks a:visited 	{font-family: Verdana, Arial, Helvetica, sans-serif; color:#3399FF; font-weight: normal;text-decoration:none}
+
+.hButton_newsletter {background-color: #99ccff;
+          border-color: #FFFFFF;
+          color: #000000;
+          border-style: outset;
+          border-width: 1;
+          font-size: 12px;
+          font-family: Verdana, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+    line-height: 17px;
+    vertical-align: bottom;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: -1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 100px;
+    height: 20px;
+}
+
+.hButton {background-color: #99ccff;
+          border-color: #FFFFFF;
+          color: #000000;
+          border-style: outset;
+          border-width: 1;
+          font-size: 12px;
+          font-family: Verdana, Arial, Helvetica, sans-serif;
+          font-weight: bold;         
+    line-height: 17px;
+    vertical-align: bottom;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: -1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 200px;
+    height: 20px;
+}
+
+.hButtonSignout {background-color: #99ccff;
+          border-color: #FFFFFF;
+          color: #000000;
+          border-style: outset;
+          border-width: 1;
+          font-size: 12px;
+          font-family: Verdana, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+    line-height: 17px;
+    vertical-align: bottom;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: -1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 100px;
+    height: 20px;
+}
+
+.hButtonClick {background-color: #99ccff;
+          color: #999999;
+          border-style: inset;
+          border-width: 1;
+          font-size: 12px;
+          font-family: Verdana, Arial, Helvetica, sans-serif;
+          font-weight: bold;
+    line-height: 17px;
+    vertical-align: bottom;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: -1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    width: 200px;
+    height: 20px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-right-color: #cccccc;
+    border-left-color: #cccccc;
+    border-bottom-color: #cccccc;
+    border-top-color: #cccccc;
+}
+
+.hButton2 {background-color:#FF9933;
+      border-color: #FFFFFF;
+      color: #000000;
+      border-style: outset;
+      border-width: 1;
+      font-size: 11px;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-weight: bold;    
+}
+
+.hButtonPlain {
+      background-color: #99ccff;
+      border-color: #FFFFFF;
+      color: #000000;
+      border-style: outset;
+      border-width: 1;
+      font-size: 8pt;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      height: 20px;
+}
+
+.delivery_method_container {
+    background-color: #deeff9;       
+    text-align: left;
+    width: 950px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    line-height: 25px;
+	vertical-align:middle;
+    margin: 15px;
+}
+
+.delivery_mtd_header {
+    padding-top: 15px;
+}
+
+.delivery_mtd_container_bottom {
+    padding-bottom: 15px;
+}
+
+.delivery_method_instructions {
+    text-align:left;
+    width: 950px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+	line-height: 15px;
+    font-style: normal;
+    background-position: left;
+}
+
+.delivery_method_instructions_old {
+    text-align:left;
+    width: 950px;
+    margin-left:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+	line-height: 15px;
+    font-style: normal;
+    background-position: left;
+    color:#656565;
+}
+
+.patron_details_container {
+    background-color: #deeff9;      
+    text-align: left;
+    vertical-align: middle;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.agreement_container {
+    background-color: #deeff9;
+    text-align: left;
+    vertical-align: middle;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.agreement_content_txt {
+    line-height: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.agreement_title {
+    line-height: 25px;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    text-decoration: underline;
+
+    font-weight: bold;
+
+}
+
+.agreement_title_venue {
+
+    line-height: 25px;
+
+    font-size: 14px;
+
+    padding-bottom: 15px;
+
+    padding-top: 15px;
+
+    padding-right: 15px;
+
+    font-weight: bold;
+}
+
+.patron_details_header {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.patron_details_bottom {
+    padding-bottom: 15px;
+}
+
+.card_details_container {  
+    padding-left: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-collapse:collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;    
+    margin-right: 15px;    
+    padding: 3px;
+}
+
+.confirm_card_instructions_table{
+    text-align: left;
+    vertical-align: top;
+    margin-top:  0px;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    line-height: 11pt;
+    padding: 3px;
+}
+
+.redirect_container {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	line-height:18px; 
+	color: #676767; 
+	letter-spacing:0.5pt; 
+	word-spacing:1pt; 
+	margin:50px;
+}
+
+.redirect_table {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	line-height:18px; 
+	color: #0066cb;
+}
+
+.confirm_payment_instructions_table {
+    text-align: left;
+    vertical-align: top;
+    width: 950px;
+    margin-top:  0px;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.5em;
+    padding: 3px;
+}
+
+.confirm_shopping_cart_table {
+    text-align: left;
+    vertical-align: top;
+    margin-top:  0px;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.2em;
+    padding: 3px;
+}
+
+.contact_text {
+    font-family: Verdana, Arial, Helvetica, sans-serif
+    font-size: 11px;
+    color:#333333;
+    text-align:left;
+}
+
+.contact_text a:active	{font-family: Verdana, Arial, Helvetica, sans-serif; color:#0066FF; font-weight: normal;text-decoration:underline}
+.contact_text a:link 		{font-family: Verdana, Arial, Helvetica, sans-serif; color: #0066FF; font-weight: normal;text-decoration:underline}
+.contact_text a:hover 	{font-family: Verdana, Arial, Helvetica, sans-serif; color: #0066FF; font-weight: normal;text-decoration:underline}
+.contact_text a:visited 	{font-family: Verdana, Arial, Helvetica, sans-serif; color:#0066FF; font-weight: normal;text-decoration:underline}
+
+.image_frame {
+    vertical-align:middle
+}
+
+.image_frame IMG{
+    border: 5px; border-color:#FFFFFF; float:left; display:inline; margin-left:5px
+}
+
+.new_icon {
+    PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: none; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; vertical-align:top; text-align:right
+}
+
+.about_header {
+	FONT-SIZE: 10pt; COLOR:#888888; LINE-HEIGHT: 1.2em; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:left; vertical-align:middle
+}
+
+.entertain_container {
+    background-color: #deeff9;
+    text-align: left;
+    border-collapse:collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+    font-weight:bold;
+    line-height: 1.2em;    
+    margin-right: 15px;    
+    padding: 3px;
+    vertical-align:middle
+}
+
+.thank_you  {
+    FONT-SIZE: 14pt; COLOR:#FF0000; LINE-HEIGHT: 1.2em; font-family: Verdana, Arial, Helvetica, sans-serif; font-weight:bold; text-align:center; vertical-align:middle; margin:5; padding:5
+}
+
+.blue_underline {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: blue;
+    text-decoration: underline;
+}
+
+.cart_table{
+   text-align: left;
+    vertical-align: middle;
+    border-collapse:collapse;
+    border-spacing:0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 1.2em;
+    background-color: #FFFFFF;
+    padding: 3;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #cccccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #cccccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cccccc;
+}
+
+.cart_table td{
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #cccccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #cccccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #cccccc;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #cccccc;
+}
+
+.white_tr_border_td {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: white;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: white;
+    background-color: white;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.txt_left_align {
+
+    text-align: left;
+    vertical-align: middle;
+}
+
+.agreement_txt {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+.check_item_label {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ozh - 20140211 */
+.tbl_cls_block2 {
+    width:900px;
+    /*background-color: #deeff9;*/
+    text-align: left;
+    vertical-align: middle;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+
+.credit_card_txt {
+    line-height: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.ticket_collection_txt {
+    line-height: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.page_width {
+    width:950px;
+}
+
+.newsletter_title {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    color:#ffffff;
+    background-color: #8bc7eb;
+    text-align: left;
+
+    margin-right: 15px;
+    margin-left: 15px;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 35px;
+}
+
+.red_text {
+    color: #cc0000;
+}
+
+.small_shopping_cart_text_1 {
+    padding-right: 0px; font-size: 10px; float: right; text-transform: none; 
+    color: #0066cb; padding-top: 5px; font-style: normal; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left
+}
+
+/* //14-11-2012 added by webster for hk_venue_solicitation */
+.patron_login_table{
+   border-right-width: 1px;
+   border-right-style: solid;
+   border-right-color: #f8f8f8;
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   font-style: normal;
+   line-height: 3.0em;
+   vertical-align: middle;
+   font-weight: bold;
+   color:#333333;
+   text-align: left;
+   background-color:#deeff9
+}
+
+.patron_login_cell{
+   padding-left: 20px;
+}
+
+.patron_login_label {   
+   padding-left: 20px;
+   width: 200px;
+}
+
+.patron_login_label_11px {   
+   padding-left: 20px;
+   width: 200px;
+   font-size: 11px;
+   font-weight: normal;
+}
+
+.login_button {
+    background-color: #99ccff;
+    border-color: #FFFFFF;
+    color: #000000;
+    border-style: outset;
+    border-width: 1;
+    font-size: 12px;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;         
+    line-height: 12px;
+    vertical-align: bottom;
+    background-position: center;
+    padding-top: 0px;
+    padding-bottom: -1px;
+    width: 150px;
+    height: 20px;
+}
+
+.login_error_div{
+    width: 600px;
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    border-width:2px;
+    border-style:solid;
+    border-color:#ff0000;
+    padding-left: 20px;	
+    padding-right: 20px;
+    padding-top: 10px;	
+    padding-bottom: 10px;	
+}
+
+.vn_solic_header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.vn_solic_cell {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.check_txn_header {   
+    background-color: #deeff9;
+    padding-left: 20px;
+    width: 200px;
+    font-weight: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.check_txn_11px {   
+    line-height: 25px;
+    background-color: #deeff9;
+    padding-left: 20px;
+    width: 200px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.check_txn_label {   
+   padding-left: 20px;
+}
+
+.subscribe_color {
+    color: #F79646;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.subscribe_color a {
+    color: #F79646;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.subscribe_color a:link {
+    color: #F79646;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.subscribe_color a:visited {
+    color: #F79646;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.subscribe_color a:hover {
+    color: #F79646;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.subscribe_color a:active {
+    color: #F79646;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* ozh - 20140211 - BEGIN */
+.hkViewCart{
+	font-size:12px;
+}
+
+#deliveryMethod , #delCost {
+	font-size:12px;
+}
+
+.venueSubContent {
+    line-height: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+div#deliveryAdd{
+	font-size:12px;
+}
+
+div#deliveryAdress div#deliveryAddressInputSection #deliveryAddrManualInputSection{
+	font-size:12px;
+}
+
+div#deliveryAdress div#deliveryAddressStill{
+	font-size:12px;
+}
+
+.deliverytd #delContent{
+	font-size:12px;
+}
+
+table.tbl_cls_transaction_header{
+	font-size:12px;
+}
+
+table.tbl_cls_transaction_detail{
+	font-size:12px;
+}
+
+
+#footer{
+    border-top: 1px solid #EDEDED;
+    color: #4C4C4C;
+    font-size: 11px;
+    padding: 20px;
+  	margin: 10px auto;
+    position: relative;
+    width: 950px;
+
+}
+
+/* ozh - 20140211 - END */
+
+
+
+

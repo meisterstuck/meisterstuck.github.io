@@ -1,0 +1,57 @@
+div#modalCaptchacontainer { position: absolute; z-index: 200; width: 575px; left: 82%; top:20px; margin-top: 100px; margin-left:-698px; background: url(../images/bgtopmodal.png) no-repeat 0 0; padding-top:14px;}
+div#modalCaptchacontainerCP { position: absolute; z-index: 200; width: 575px; left: 82%; top:20px; margin-top: 100px; margin-left:-698px; background: url(../images/bgtopmodal.png) no-repeat 0 0; padding-top:14px;}
+
+div#modalCaptchacontents { width:100%; overflow:auto; background: url(../images/bgcontentmodal.png) no-repeat 0 100%; padding:20px 0 20px 0; overflow: auto;}
+div#modalCaptchacontents h2 {font-size: 18px; font-family: Verdana, Arial, Helvetica, sans-serif; padding-bottom: 5px;}
+div#modalCaptchacontents ul { list-style-type: none;} 
+
+div#modalCaptchacontents { float: left; width:100%; }
+div#modalCaptchacontents form {padding:0 0 0 0px;}
+div#modalCaptchacontents form li { overflow:auto; padding:6px 0; }
+div#modalCaptchacontents form li label {font-family: Verdana, Arial, Helvetica, sans-serif; float: left; width: 118px; font-size: 13px; color: #4e4e4e; padding-top:2px;}
+div#modalCaptchacontents form li input { background: url(../images/inputtext.jpg) no-repeat 0 0; width: 224px; padding:6px 5px; border: none;}
+div#modalCaptchacontents form li p.errormsg {padding: 5px 55px 5px 117px; color: #fe1111; display: none;}
+div#modalCaptchacontents form li p.errormsgCP {padding: 5px 55px 5px 117px; color: #fe1111; display: none;}
+div#modalCaptchacontents form li.error label { color: #fe1111; }
+div#modalCaptchacontents form li.error input { /*border:1px solid #fe1111;*/}
+div#modalCaptchacontents form li.error p.errormsg { display: block;}
+div#modalCaptchacontents form li.error span p.errormsg { display: block;}
+div#modalCaptchacontents form li.error p.errormsgCP { display: block;}
+div#modalCaptchacontents form li.error span p.errormsgCP { display: block;}
+div#modalCaptchacontents div.actions {position: relative; overflow: auto; padding:10px 0 25px 115px;}
+div#modalCaptchacontents div.actions div#uniform-loginCN { width: 90px; float: left; background: url(../images/accountlogin_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalCaptchacontents div.actions div#uniform-loginTW { width: 90px; float: left; background: url(../images/accountlogin_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalCaptchacontents div.actions div#uniform-remember { width: 14px; float: left; padding:10px 0 0 10px;}
+div#modalCaptchacontents div.actions div#uniform-remember span { display: block; position: relative; width: 14px; height: 16px; background: url(../images/checkboxremember.png) no-repeat 0 0; }
+div#modalCaptchacontents div.actions div#uniform-remember span.checked { background-position: 0 -18px}
+div#modalCaptchacontents div.actions div#uniform-remember span input {position: absolute; top: 0; left: 0;cursor: pointer}
+div#modalCaptchacontents div.actions label { float: left; padding:10px 0 0 5px; color: #4e4e4e}
+div#modalCaptchacontents a.retrieve {text-decoration: none; color: #3299dd; margin:0 0 0 115px;}
+div#modalCaptchacontents div.retrieveCaptchaBlock { padding: 0 0 0 115px;}
+div#modalCaptchacontents div.retrieveCaptchaBlock li input {background: url(../images/inputtext.jpg) no-repeat 0 0; width: 224px; padding:6px 5px; border: none;}
+div#modalCaptchacontents div.retrieveCaptchaBlock li label {padding:3px 50px 5px 0; color: #4e4e4e;}
+div#modalCaptchacontents div.retrieveCaptchaBlock li p {padding:3px 50px 5px 0; color: #4e4e4e;}
+div#modalCaptchacontents div.retrieveCaptchaBlock li p.errormsg {color: #fe1111; /*font-size:11px;*/}
+div#modalCaptchacontents div.retrieveCaptchaBlock li p.errormsgCP {color: #fe1111; /*font-size:11px;*/}
+div#modalCaptchacontents div.retrieveCaptchaBlock div#uniform-continueCaptcha {width: 101px; float: left; background: url(../images/continue.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalCaptchacontents div.retrieveCaptchaBlock div#uniform-continueCaptchaCN {width: 101px; float: left; background: url(../images/continue_zh_cn.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalCaptchacontents div.retrieveCaptchaBlock div#uniform-continueCaptchaTW {width: 101px; float: left; background: url(../images/continue_zh_tw.png) no-repeat 0 0; padding:7px 0; text-indent: -9999px; cursor: pointer}
+div#modalCaptchacontents div.retrieveCaptchaBlock li.error input { /*border:1px solid #fe1111;*/}
+div#modalCaptchacontents div.retrieveCaptchaBlock li.error label { color: #fe1111; font-size:11px;}
+div#modalCaptchacontents span.loader { padding-left:10px; display: none;}
+
+div#modalCaptchacontents divmodalCaptchafootlinks {clear: both; padding: 10px 80px 10px 0; text-align: right;}
+div#modalCaptchacontents divmodalCaptchafootlinks a {color: #4e4e4e; text-decoration: none; border-bottom: 1px solid #d3d3d3}
+div#modalCaptchacontents a.closeChapchabox { position: absolute; bottom:30px; right:20px; display:block; width: 16px; height: 15px; text-indent: -9999px;  background: url(../images/closelightbox.png) no-repeat 0 0;}
+div#modalCaptchacontents a.closeChapchaboxCP { position: absolute; bottom:30px; right:20px; display:block; width: 16px; height: 15px; text-indent: -9999px;  background: url(../images/closelightbox.png) no-repeat 0 0;}
+
+div#modalCaptchalightbox {background: url(../images/moralBackground.png); background-repeat:repeat; left: 0;position: fixed;top: 0;width: 100%; z-index: 199;}
+
+.recaptcha_widget_div {
+
+	padding-left: 16px;
+
+}
+
+a#continueCaptchaCP { display: inline-block; width: 133px; height:50px; background: url(../images/continue.png) no-repeat 0 0; /*text-indent: -9999px;*/ }
+a#continueCaptchaCPTW { display:inline-block; width: 133px; height:50px; background: url(../images/continue_zh_tw.png) no-repeat 0 0; /*text-indent: -9999px;*/ }

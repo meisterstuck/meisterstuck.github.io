@@ -1,0 +1,2531 @@
+#contentwrapper { 
+
+	background:url(../images/contentbg.png) repeat-y 0 0; 
+
+/*    padding-bottom: 100px;*/
+
+}
+
+#content {
+
+	background: none;
+
+	overflow: hidden;
+
+	margin: 0 auto; 
+
+	width:980px;	
+
+}
+
+
+
+#user-opt {
+
+	background: url(../images/useroptbg.png) repeat-x 0 0;
+
+	height: 40px; 
+
+	margin-bottom: 10px; 
+
+	position: relative; 
+
+	width: 100%;
+
+}
+
+#demo-opt {
+
+        background: url(../images/useroptbg.png) repeat-x 0 0;
+
+        height: 40px;
+
+	margin-bottom: 10px;
+
+        position: relative;
+
+        width: 100%;
+
+		display: none;
+
+}
+
+
+
+#user-opt ul {
+
+	float: right;
+
+	list-style-type: none;
+
+	overflow: auto;
+
+/*	width: 375px;*/
+
+	padding-right: 30px;
+
+}
+
+#user-opt ul li {
+
+	color: #9c9c9c;
+
+	float: left;
+
+	font-size: 12px;
+
+	padding: 14px 5px 18px 25px;
+
+	position: relative;
+
+}
+
+#user-opt ul li.mperson {
+
+/*	background: url(../images/package/usericon.png) no-repeat 0 50%;*/
+
+}
+
+#user-opt ul li.mfaq {
+
+	background: url(../images/package/faqicon.png) no-repeat 0 50%;
+
+	padding: 18px 5px 18px 35px;
+
+}
+
+#user-opt ul li.mcart {
+
+	background: url(../images/package/carticon.png) no-repeat 0 50%;
+
+	padding: 18px 5px 18px 35px;
+
+}
+
+#user-opt ul li.mcart span {
+
+	background: url(../images/cart/imgindicatorbg.png) no-repeat 0 0;
+
+	color: #fff;
+
+	display: block;
+
+	font-size: 10px;
+
+	font-weight: bold;
+
+	left:20px;
+
+	padding:3px 0;
+
+	position: absolute;
+
+	text-align: center;
+
+	top: 5px;
+
+	width: 18px;
+
+}
+
+#user-opt ul li strong {
+
+	color: #000;
+
+	font-weight: bold;
+
+/*	text-transform: uppercase;*/
+
+}
+
+#user-opt ul li a {
+
+	color: #000;
+
+	font-weight: bold;
+
+	text-transform: uppercase;
+
+	text-decoration: none;
+
+}
+
+#user-opt ul li a.msmall {
+
+	color: #9c9c9c;
+
+	font-size: 11px;
+
+	font-weight: normal;
+
+	text-decoration: none;
+
+	text-transform: lowercase;
+
+}
+
+
+
+/*
+
+	Confirmation Page
+
+*/
+
+div.div_cls_block2{ font-family: Verdana, Arial, Helvetica, sans-serif; }
+
+div.div_cls_block2 h3{  margin:0 0 5px 0; }
+
+div.div_cls_block2 h4{  margin:0 0 5px 0; }
+
+/*div.div_cls_block2 p{ margin:0 0 10px 0; }*/
+
+div.div_cls_block2 a.anc_cls_format1{ font-size:12px; text-decoration:none;}
+
+div.div_cls_block2 a.anc_cls_format1:hover{ color: #3399FF;}
+
+
+
+div#cartpopup { 
+
+    background:url(../images/cart/popupcart.png) no-repeat 0 0;
+
+    height: 397px;
+
+    margin-top:-35px;
+
+    position: absolute;
+
+    right: 10px;
+
+    text-align: center;
+
+    width:236px; 
+
+    visibility: hidden;
+
+    z-index: 100;
+
+}
+
+div#cartpopup h3 { 
+
+    color: #fff;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    padding:20px 0 0 0;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+}
+
+div#cartpopup div#verticalslider { 
+
+    background: #fff;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    width: 219px;
+
+}
+
+div#cartpopup div#verticalslider ul { 
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding:0;
+
+    left: 7px;
+
+    text-align: left;
+
+    width: 205px;
+
+}
+
+div#cartpopup div#verticalslider ul li { 
+
+    border-bottom: 1px solid #b4b2b2;
+
+    overflow: hidden;
+
+}
+
+div#cartpopup div#verticalslider ul li img { 
+
+   float:left;
+
+   padding-top:10px;
+
+}
+
+div#cartpopup div#verticalslider ul li h4 { 
+
+   color: #515151;
+
+   font-size: 12px;
+
+   padding-top:10px;
+
+   text-transform: uppercase;
+
+}
+
+div#cartpopup div#verticalslider ul li div.tinfo {
+
+    float: left;
+
+    margin-left: 2px;
+
+    width: 120px;
+
+}
+
+div#cartpopup div#verticalslider ul li ol { 
+
+    list-style-type: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: left;
+
+}
+
+div#cartpopup div#verticalslider ul li ol li { 
+
+    border:none;
+
+    color: #898787;
+
+    font-size: 11px;
+
+    line-height: 100%;
+
+    overflow: inherit;
+
+    padding: 0;
+
+}
+
+div#cartpopup .carousel-control {
+
+    border: 0 none;
+
+    cursor: pointer;
+
+    display:block;
+
+    height: 18px;
+
+    line-height: 999px;
+
+    text-indent: -9999px;
+
+    vertical-align: middle;
+
+    width: 219px;
+
+}
+
+div#cartpopup .carousel-next {
+
+    background: url(../images/cart/bottomcontrol.jpg) no-repeat scroll 0 0 transparent;
+
+}
+
+div#cartpopup .carousel-previous {
+
+    background: url(../images/cart/topcontrol.jpg) no-repeat scroll 0 0 transparent;
+
+}
+
+div#cartpopup div#timeerpopup {
+
+    background: url(../images/package/timerbg.jpg) no-repeat 0 0;
+
+    color: #007EFF;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    font-size: 36px;
+
+    font-weight: bold;
+
+    height: 41px;
+
+    margin: 10px auto 5px auto;
+
+    text-align: center;
+
+    width: 101px;
+
+}
+
+div#cartpopup p {
+
+    color: #fff;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    padding:0;
+
+}
+
+div#cartpopup a.confirmorder {
+
+    background:url(../images/cart/confirmorder.png) no-repeat 0 0;
+
+    display: block; 
+
+    margin: 0 auto;
+
+    padding: 15px 0;
+
+    text-indent: -9999px;
+
+    width: 161px;
+
+}
+
+/*div.div_cls_block2 .tbl_cls_shading1 { webkit-box-shadow: 0px 0px 5px 1px #d5d5d5; box-shadow: 0px 0px 5px 1px #d5d5d5;  behavior: url(PIE.htc); }*/
+
+/* ozh 20140210 
+div.div_cls_block2 .div_cls_block2_block1 { margin:15px 15px 25px 15px; position: relative; height:100% }
+*/
+div.div_cls_block2 .div_cls_block2_block1 { margin:15px 15px 25px 15px; position: relative}
+
+div.div_cls_block2 .div_cls_block2_block1 h3{ font-family: Verdana, Arial, Helvetica, sans-serif; color:#656565; text-transform:uppercase; }
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec {width: 330px; position: absolute; right: 0; top: 0;}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec p { color: #636363; float: left; font-size: 11px; padding:5px 0 0 0; text-transform: uppercase;v width:110px; }
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec div.ddtable { float: right; position: relative; width:215px; }
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec a.select {
+
+    background: url(../images/cart/currencydd.jpg) no-repeat scroll 0 0 transparent;
+
+    color: #828383;
+
+    display: block;
+
+    padding: 6px 0;
+
+    position: relative;
+
+    text-decoration: none;
+
+    width: 213px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec a.select img {
+
+    border:none;
+
+	padding: 0 0 0 5px;
+
+	vertical-align: middle;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer {
+
+    background-color:#fff;
+
+    box-shadow: 0 3px 5px #888888;
+
+    display: none;
+
+    height: 70px;
+
+    padding: 27px 0 0;
+
+    position: absolute;
+
+    left:0;
+
+    top: 0;
+
+    width: 213px;
+
+    z-index: 100;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer .jspContainer {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer img.imgindicator {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 15px;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer .scrolldd {
+
+    height: 65px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer ul.dropdown_curr {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    width: 200px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer ul.dropdown_curr li a {
+
+    color: #828383;
+
+    display: block;
+
+    font-size: 14px;
+
+    padding: 2px 5px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer ul.dropdown_curr li a img {
+
+    border:none; 
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer ul.dropdown_curr li a:hover {
+
+    background-color: #FCE9B0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec .ddcontainer .jspVerticalBar {
+
+    right: 10px;
+
+    width: 8px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.currencysec select.hiddenselect {
+
+    display: none;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.timermodal {
+
+    background: url(../images/package/timerbgprompt.png) no-repeat 0 0;
+
+    height: 108px;
+
+    position: fixed;
+
+    bottom: 15px;
+
+/*    margin: 0 790px;*/
+
+    width: 190px;
+
+    right: 5px;
+
+    z-index:1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 div.timermodal div.timemodal {
+
+    background: url(../images/package/timerbg.jpg) no-repeat 0 0;
+
+    color: #007EFF;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    height: 41px;
+
+    margin: 10px auto;
+
+    text-align: center;
+
+    width: 101px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1  div.timermodal p, div.div_cls_block2 .div_cls_block2_block1  div.timermodal p {
+
+    color: #fff;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    padding:0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block1 table.tbl_cls_block1 { background:#ffffff; margin:10px 0 15px 0; width: 100%; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr.tr_cls_bg1 th {
+
+	color:#4E4E4E;
+
+    font-size: 12px;
+
+	padding:5px 0 0 0;
+
+	vertical-align: top;
+
+	border-bottom: 1px solid #9C9C9C;
+
+	height: 30px;
+
+/*	text-transform: uppercase;
+
+    background:url(../images/bg-header-1.gif) repeat-x 0 0; height:47px;*/
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr.tr_cls_bg1 th.firstcol {
+
+/*    width:370px;*/
+
+    text-align:left; 
+
+    padding-left:15px;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr.tr_cls_bg1 th.secondcol {
+
+    width:350px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr.tr_cls_bg1 th span { font-size: 9px; font-weight: normal; text-transform: lowercase;}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td { padding:7px 10px;  vertical-align: middle; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div#ddhindden {display: none;}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div#ddhinddenf {display: none;}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td img { float: left; width:80px }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.itemdescription { float: left; width:245px; padding-left:10px; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.itemdescription h3 {
+
+	color: #000;
+
+	font-size: 16px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.itemdescription span {
+
+	color: #58595b
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.promo {
+
+	padding-left:90px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td a,
+
+a.tnc_link {
+
+    color: #3981B9;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td a:hover,
+
+a.tnc_link:hover {
+
+    text-decoration: underline;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td a.anc_cls_format1 {
+
+    color: #9c9c9c;
+
+}
+
+/* Hari, 3 Mar 2015, "edit mailing details link in shopping cart details, set to blue color*/
+div.div_cls_block2 table.tbl_cls_block1 tr td a.anc_cls_format1 div {
+
+    color: #3981B9;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.separator {
+
+    width: 100%;
+
+}
+
+/* 02-10-2013 Updated by webster - masterpass_fix */
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.separatorborder {
+
+    width: 100%;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.ddtable { position: relative; width:100%; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td a.select {
+
+    background: url(../images/cart/ddcard.jpg) no-repeat scroll 0 0 transparent;
+
+    color: #000;
+
+    display: block;
+
+    font-weight: bold;
+
+    padding: 6px 0 6px 10px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    width: 403px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer {
+
+    background-color:#fff;
+
+    box-shadow: 0 3px 5px #888888;
+
+    display: none;
+
+    height: 70px;
+
+    padding: 27px 0 0;
+
+    position: absolute;
+
+    left:0;
+
+    top: 0;
+
+    width: 413px;
+
+    z-index: 100;
+
+    behavior:url(PIE.htc);
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer .jspContainer {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer img.imgindicator {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 15px;
+
+     width: auto;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer .scrolldd {
+
+    height: 65px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer span.dvalue {
+
+    position: absolute;
+
+    top:0;
+
+    left: 10px;
+
+    color: #000;
+
+    display: block;
+
+    font-weight: bold;
+
+    padding: 6px 0 6px 0px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_del {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    width: 400px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_del li a {
+
+    color: #000;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 2px 5px 2px 10px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_del li a:hover {
+
+    background-color: #FCE9B0;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_delbot {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    width: 400px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_delbot li a {
+
+    color: #000;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 2px 5px 2px 10px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer ul.dropdown_delbot li a:hover {
+
+    background-color: #FCE9B0;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .ddcontainer .jspVerticalBar {
+
+    right: 10px;
+
+    width: 8px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td select.hiddenselect {
+
+    display: none;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td span#spn_id_data1 {
+
+    font-weight: bold;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.gifinput {
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    padding-bottom: 10px;
+
+    position: relative;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.gifinput strong {
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    padding-right: 10px;
+
+    font-size: 16px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.additional strong {
+
+    font-size: 16px;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.gifinput span {
+
+    bottom: 0;
+
+    color: #ff0000;
+
+    display: none;
+
+    font-size: 11px;
+
+    font-weight: normal;
+
+    left: 145px;
+
+    position: absolute;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td p.giftv {
+
+    display: none;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.rad {
+
+    width: 100%;
+
+    overflow: auto;
+
+    position: relative;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.rad strong {
+
+    display: block;
+
+    float: left;
+
+    padding: 8px 0 0 5px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td div.radio {
+
+    float:left; 
+
+    height: 22px; 
+
+    padding:5px 0;
+
+    position: relative;
+
+    width:24px; 
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .radio span { 
+
+    position: absolute; 
+
+    top:5px; 
+
+    left: 0; 
+
+    display: block; 
+
+    width:24px; 
+
+    height: 22px;
+
+    background:url(../images/radiobutton.png) no-repeat 0 -3px;
+
+    z-index: 1 
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td .radio span input {
+
+    position: absolute; 
+
+    top:5px; 
+
+    left: 0; 
+
+    cursor: pointer;
+
+    width:24px; 
+
+    height: 22px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr td span.checked {
+
+    background-position: 0 -28px;
+
+}
+
+div.div_cls_block2 table.tbl_cls_block1 tr.tr_cls_format1{ background-color:#ffbd2c; font-weight:bold; font-size:16px; color: #000000; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td.td_cls_format1 { text-align:center; }
+
+div.div_cls_block2 table.tbl_cls_block1 tr td.td_cls_format2 { text-align:left; }
+
+div.div_cls_block2 table.tbl_cls_block1 h4 { font-family:"nevis",Helvetica,sans-serif; font-size:16px; text-transform:uppercase; }
+
+div.div_cls_block2 table.tbl_cls_block1 span.spn_cls_format1{ font-weight:normal; font-size:10px; }
+
+div.div_cls_block2 table.tbl_cls_block1 select.slct_cls_format3{ width:268px; height:20px; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block2{ margin:15px 15px 25px 15px; }
+
+div.div_cls_block2 .div_cls_block2_block2 h3{ font-family: Verdana, Arial, Helvetica, sans-serif; color:#656565; text-transform:uppercase; }
+
+div.div_cls_block2 .div_cls_block2_block2 .div_cls_block2_block2_block1{ width:240px; float:right; margin:10px 0 0 0; }
+
+div.div_cls_block2 .div_cls_block2_block2 .div_cls_block2_block2_block1 a.anc_cls_bg1{ background:url('../images/anc-bg-1.png') no-repeat 0 0; display:block; width:69px; height:37px; text-indent:-999999px; float:left; }
+
+
+
+.shoppingcart a.anc_cls_bg2{ background:url('../images/anc-bg-2.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px;}
+.shoppingcart a.anc_cls_bg2CN{ background:url('../images/anc-bg-2_zh_cn.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px;}
+.shoppingcart a.anc_cls_bg2TW{ background:url('../images/anc-bg-2_zh_tw.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px;}
+
+.shoppingcart a.anc_cls_bg2Same{ background:url('../images/anc-bg-2-sameshow.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px; margin-left:20px;}
+.shoppingcart a.anc_cls_bg2SameCN{ background:url('../images/anc-bg-2-sameshow_zh_cn.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px; margin-left:20px;}
+.shoppingcart a.anc_cls_bg2SameTW{ background:url('../images/anc-bg-2-sameshow_zh_tw.png') no-repeat 0 0; display:block; width:168px; height:37px; text-indent:-999999px; float:right; margin-top:-8px; margin-left:20px;}
+
+
+div.div_cls_block2 .div_cls_block2_block3{ margin:15px 25px 15px 15px; padding:10px; background-color:#ededed; border:1px solid #c9c9c9;  box-shadow:inset 0 5px 5px #b2b2b2; behavior:url(PIE.htc);}
+
+div.div_cls_block2 .div_cls_block2_block3 h4{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:16px; color:#656565; text-transform:uppercase; margin-bottom:10px; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block3 .checker,
+
+.tbl_cls_block2 .checker {
+
+    float:left; 
+
+    height: 22px; 
+
+    padding:5px 0;
+
+    position: relative;
+
+    width:24px; 
+
+}
+
+div.div_cls_block2 .div_cls_block2_block3 .checker span,
+
+.tbl_cls_block2 .checker span { 
+
+    position: absolute; 
+
+    top:0; 
+
+    left: 0; 
+
+    display: block; 
+
+    width:24px; 
+
+    height: 22px;
+
+    background:url(../images/package/inputcheckbox.png) no-repeat 0 0;
+
+    z-index: 1 
+
+}
+
+
+
+div.div_cls_block2 .div_cls_block2_block3 .checker span.checked,
+
+.tbl_cls_block2 .checker span.checked {
+
+    background-position: 0 -26px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block3.checker span input,
+
+.tbl_cls_block2 .checker span input {
+
+    position: absolute; 
+
+    top:0; 
+
+    left: 0; 
+
+    cursor: pointer;
+
+    width:24px; 
+
+    height: 22px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block3 a {color: #a7a7a7;}
+
+
+
+
+
+/* 09-07-2013 Updated by webster - masterpass_v3 */
+
+/* General Credit Card & OCBC Voucher checkbox block */
+
+div.div_cls_block2 .div_cls_block2_block4{ margin:5px 15px 5px 25px; padding:0px; behavior:url(PIE.htc);}
+
+div.div_cls_block2 .div_cls_block2_block4 h4{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:16px; color:#656565;  margin-bottom:10px; display:inline; float: left;}
+
+/* ozh - 20140211 */
+/*div.div_cls_block2 .div_cls_block2_block4 img{ float: right;} */
+
+/* 02-10-2013 Updated by webster - masterpass_fix */
+
+div.div_cls_block2 .div_cls_block2_block4 div.separatorborder { width: 908px; }
+
+div.div_cls_block2 .div_cls_block2_block4 a.anc_cls_bg5 { background:url('../images/anc-bg-5.png') no-repeat 0 0; display:block; float:left; width:161px; height:45px; text-indent:-999999px; }
+
+div.div_cls_block2 .div_cls_block2_block4 a.anc_cls_bg6 { background:url('../images/anc-bg-6.png') no-repeat 0 0; display:block; float:left; width:161px; height:45px; text-indent:-999999px; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1{ float:left; display:none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1{ width:422px; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1_block2 {float: right; width: 482px; display:none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2{ width:483px; float:right; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 p#noticecard {display: none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 .div_cls_adsblock2{ height:90px; background-color:#939598; color:white; margin:0 0 9px 0; position:relative; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 .div_cls_adsblock2 p{ position:absolute; left:40%; top:45%; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block3{ width:422px; display:none; }
+
+
+
+div.div_cls_block2 .div_cls_block2_block4  .div_cls_block2_block4_block2 {float: right; width: 482px; display:none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block2{ width:483px; float:right; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block2 p#noticecard {display: none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block2 .div_cls_adsblock2{ height:90px; background-color:#939598; color:white; margin:0 0 9px 0; position:relative; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block2 .div_cls_adsblock2 p{ position:absolute; left:40%; top:45%; }
+
+
+
+/* MasterPass Payment checkbox block */
+
+div.div_cls_block2 .div_cls_block2_block5{ margin:15px 15px 25px 25px; padding:10px; width:422px; background-color:#fffed8; behavior:url(PIE.htc); }
+
+div.div_cls_block2 .div_cls_block2_block5 h4{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:16px; color:#656565; margin-bottom:10px; }
+
+div.div_cls_block2 .div_cls_block2_block5 .div_cls_block2_block5_block1{ float:left; }
+
+div.div_cls_block2 .div_cls_block2_block5 .div_cls_block2_block5_block1 .div_cls_block2_block5_block1_block1{ width:422px; }
+
+
+
+/* Credit Card Detail Block for OCBC Payment checkbox block */
+
+div.div_cls_block2 .div_cls_block2_block6{ margin:5px 15px 5px 25px; padding:10px; height:260px; background-color:#fffed8; behavior:url(PIE.htc); display: none;}
+
+div.div_cls_block2 .div_cls_block2_block6 h4{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:16px; color:#656565; margin-bottom:10px; }
+
+div.div_cls_block2 .div_cls_block2_block6 .div_cls_block2_block6_block1{ float:left; }
+
+div.div_cls_block2 .div_cls_block2_block6 .div_cls_block2_block6_block1 .div_cls_block2_block6_block1_block1{ width:422px; }
+
+div.div_cls_block2 .div_cls_block2_block6 .div_cls_block2_block6_block1_block2 {float: right; width: 472px;}
+
+
+
+/* Credit Card Detail */
+
+
+
+div.div_cls_block2 .div_cls_block2_block4{ margin:15px 15px 25px 25px; padding:10px; background-color:#ededed; border:1px solid #c9c9c9; box-shadow:inset 0 5px 5px #b2b2b2; behavior:url(PIE.htc); }
+
+div.div_cls_block2 .div_cls_block2_block4 h4{ font-family: Verdana, Arial, Helvetica, sans-serif; font-size:16px; color:#656565; text-transform:uppercase; margin-bottom:10px; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1{ float:left; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1_block2 {float: right; width: 482px;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1{ width:422px; /*float:left;*/ }
+
+/* ozh - 20140211
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td { padding:0 0 5px 0; }
+*/
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.ddtable { position: relative; width:100%; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td a.select {
+
+    background: url(../images/cart/carddd.jpg) no-repeat scroll 0 0 transparent;
+
+    color: #000;
+
+    display: block;
+
+    font-weight: normal;
+
+    padding: 6px 0 6px 10px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    width: 268px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer {
+
+    background-color:#fff;
+
+    box-shadow: 0 3px 5px #888888;
+
+    display: none;
+
+    height: 70px;
+
+    padding: 27px 0 0;
+
+    position: absolute;
+
+    left:0;
+
+    top: 0;
+
+    width: 268px;
+
+    z-index: 100;
+
+    behavior:url(PIE.htc);
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer .jspContainer {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer img.imgindicator {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 15px;
+
+     width: auto;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer span.dvalue {
+
+    position: absolute;
+
+    top:0;
+
+    left: 10px;
+
+    color: #000;
+
+    display: block;
+
+    padding: 6px 0 6px 0px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer .scrolldd {
+
+    height: 65px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer ul.dropdown_card {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    width: 258px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer ul.dropdown_card li a {
+
+    color: #000;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: normal;
+
+    padding: 2px 5px 2px 10px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer ul.dropdown_card li a:hover {
+
+    background-color: #FCE9B0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td .ddcontainer .jspVerticalBar {
+
+    right: 10px;
+
+    width: 8px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td select.hiddenselect {
+
+    display: none;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown { position: relative; width:100%; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown a.select {
+
+    background: url(../images/cart/yeardd.jpg) no-repeat scroll 0 0 transparent;
+
+    color: #000;
+
+    display: block;
+
+    font-weight: normal;
+
+    padding: 6px 0 6px 10px;
+
+    position: relative;
+
+    text-decoration: none;
+
+    width: 130px;
+
+    z-index: 0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer {
+
+    background-color:#fff;
+
+    box-shadow: 0 3px 5px #888888;
+
+    display: none;
+
+    height: 70px;
+
+    padding: 27px 0 0;
+
+    position: absolute;
+
+    left:0;
+
+    top: 0;
+
+    width: 130px;
+
+    z-index: 100;
+
+    behavior:url(PIE.htc);
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer .jspContainer {
+
+    margin: 0;
+
+    overflow: hidden;
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer img.imgindicator {
+
+    position: absolute;
+
+    right: 8px;
+
+    top: 15px;
+
+     width: auto;
+
+    z-index: 1;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.ddcontainer span.dvalue {
+
+    position: absolute;
+
+    top:0;
+
+    left: 10px;
+
+    color: #000;
+
+    display: block;
+
+    padding: 6px 0 6px 0px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer .scrolldd {
+
+    height: 65px;
+
+    overflow: hidden;
+
+    width: 100%;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer ul.dropdown_date {
+
+    list-style-type: none;
+
+    padding-left: 0;
+
+    width: 115px;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer ul.dropdown_date li a {
+
+    color: #000;
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: normal;
+
+    padding: 2px 5px 2px 10px;
+
+    text-align: left;
+
+    text-decoration: none;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer ul.dropdown_date li a:hover {
+
+    background-color: #FCE9B0;
+
+}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 table.tbl_cls_block2 tr td div.dddropdown .ddcontainer .jspVerticalBar {
+
+    right: 10px;
+
+    width: 8px;
+
+}
+
+
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 select.slct_cls_format1{ width:268px; height:20px; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block1 select.slct_cls_format2{ width:134px; height:20px; }
+
+div.div_cls_block2 input.txt_cls_format1 { /*background:#f2f2f2;*/ border:1px solid #c3c3c3; width:266px; padding:5px 5px; margin-top:10px;}
+
+div.div_cls_block2 input.error {border:1px solid #ff0000;}
+
+div.div_cls_block2 input.text_format {/*background:url(../images/cart/textinput.jpg) no-repeat 0 0;*/ border:1px solid #9c9c9c; width:185px; padding:5px 5px;}
+div.div_cls_block2 input.smtext_error {outline: 2px solid #FE1111;}		/*added by shenghou 20131217 shenghou - validate QAS address*/
+div.div_cls_block2 input.text_formatsmall {/*background:url(../images/cart/stextinput.jpg) no-repeat 0 0;*/ border:1px solid #9c9c9c; width:95px; padding:5px 5px;}
+
+div.div_cls_block2 a.anc_cls_bg3{ background:url('../images/anc-bg-3.png') no-repeat 0 0; display:block; width:161px; height:45px; text-indent:-999999px; }
+div.div_cls_block2 a.anc_cls_bg3CN{ background:url('../images/anc-bg-3_zh_cn.png') no-repeat 0 0; display:block; width:161px; height:45px; text-indent:-999999px; }
+div.div_cls_block2 a.anc_cls_bg3TW{ background:url('../images/anc-bg-3_zh_tw.png') no-repeat 0 0; display:block; width:161px; height:45px; text-indent:-999999px; }
+
+confirm_order_btnCN{ background:url('../images/anc-bg-3_zh_cn.png') no-repeat 0 0; display:block; width:161px; height:45px; text-indent:-999999px; }
+
+
+
+div.div_cls_block2 .anc_cls_bg4{ background:url('../images/anc-bg-4.png') no-repeat 0 0; width:69px; height:39px; text-indent:-999999px; border:0px; cursor:pointer;   }
+
+
+
+/*25-02-2013 Added by webster for ocbc_voucher_fix2 */
+
+.div_cls_block2_block4 a.anc_cls_bg5 { background:url('../images/anc-bg-5.png') no-repeat 0 0; display:block; float:left; width:161px; height:45px; text-indent:-999999px; }
+
+.div_cls_block2_block4 a.anc_cls_bg6 { background:url('../images/anc-bg-6.png') no-repeat 0 0; display:block; float:left; width:161px; height:45px; text-indent:-999999px; }
+
+
+
+
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2{ width:483px; float:right; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 p#noticecard {display: none;}
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 .div_cls_adsblock2{ height:90px; background-color:#939598; color:white; margin:0 0 9px 0; position:relative; }
+
+div.div_cls_block2 .div_cls_block2_block4 .div_cls_block2_block4_block1 .div_cls_block2_block4_block1_block2 .div_cls_adsblock2 p{ position:absolute; left:40%; top:45%; }
+
+
+
+div.div_cls_block2  .masterpasscontent { display:none; }
+
+
+
+/* Event items carousel
+
+----------------------------------------*/
+
+#event-items { margin-top: -2px; border: 2px solid #DDD; padding: 12px; }
+
+#event-items .items-csel { position:relative; overflow:hidden; width:810px; height:142px; float: left; padding: 0 30px;}
+
+#event-items .items-csel .items { width:20000em; position:absolute; clear:both; }
+
+#event-items .items-csel img { float:left; background-color:#fff; width:141px; height:142px; padding: 0 3px;}
+
+#event-items .items-csel .merchItems img:hover { cursor: pointer; }
+
+#event-items .items-csel .active { border:2px solid #000; position:relative; cursor:default; }  
+
+
+
+#event-items .items div.merchItems { float:left; margin: 0 30px; }
+
+#event-items .items div.merchItems a { float: left; position: relative; width: 141px; height: 142px; margin: 0 2px; }
+
+#event-items .items div.merchItems a:hover { cursor: pointer; }
+
+
+
+#event-items  a.browse { 
+
+	background:url('../images/items-arrow-sprite.png') no-repeat; display:block; width:24px;
+
+    height:30px; float:left; margin:50px 0; cursor:pointer; font-size:1px; }
+
+
+
+#event-items  a.right { background-position: -28px 0px; clear:right; margin-right: 0px;}
+
+#event-items  a.right:hover {  }
+
+#event-items a.right:active {  }
+
+
+
+#event-items a.left { background-position: 0 0; }
+
+#event-items a.left:hover  {  }
+
+#event-items a.left:active {  }
+
+
+
+#event-items a.up:hover { background-position:-30px 0; }
+
+#event-items a.up:active { background-position:-60px 0; }
+
+
+
+#event-items a.down { background-position: 0 -30px; }
+
+#event-items a.down:hover { background-position:-30px -30px; }
+
+#event-items a.down:active { background-position:-60px -30px; }
+
+
+
+#event-items a.disabled { visibility:hidden !important; }
+
+
+
+
+
+
+
+
+
+/*
+
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+
+ *
+
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+
+ * may not operate correctly without them.
+
+ */
+
+
+
+.jspContainer
+
+{
+
+    margin: 20px auto;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+
+
+.jspPane
+
+{
+
+    position: absolute;
+
+}
+
+
+
+.jspVerticalBar
+
+{
+
+    position: absolute;
+
+    top: 0;
+
+    right: 20px;
+
+    width: 10px;
+
+    height: 100%;
+
+    /*background: red;*/
+
+}
+
+
+
+.jspHorizontalBar
+
+{
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 16px;
+
+    background: red;
+
+}
+
+
+
+.jspVerticalBar *,
+
+.jspHorizontalBar *
+
+{
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+
+.jspCap
+
+{
+
+    display: none;
+
+}
+
+
+
+.jspHorizontalBar .jspCap
+
+{
+
+    float: left;
+
+}
+
+
+
+.jspTrack
+
+{
+
+    background: #fff;
+
+    position: relative;
+
+}
+
+
+
+.jspDrag
+
+{
+
+    background: #626262;
+
+    border-radius: 3px 3px 3px 3px;
+
+    position: relative;
+
+    top: 0;
+
+    left: 0;
+
+    cursor: pointer;
+
+    behavior:url(PIE.htc);
+
+}
+
+
+
+.jspHorizontalBar .jspTrack,
+
+.jspHorizontalBar .jspDrag
+
+{
+
+    float: left;
+
+    height: 100%;
+
+}
+
+
+
+.jspArrow
+
+{
+
+    background: #50506d;
+
+    text-indent: -20000px;
+
+    display: block;
+
+    cursor: pointer;
+
+}
+
+
+
+.jspArrow.jspDisabled
+
+{
+
+    cursor: default;
+
+    background: #80808d;
+
+}
+
+
+
+.jspVerticalBar .jspArrow
+
+{
+
+    height: 16px;
+
+}
+
+
+
+.jspHorizontalBar .jspArrow
+
+{
+
+    width: 16px;
+
+    float: left;
+
+    height: 100%;
+
+}
+
+
+
+.jspVerticalBar .jspArrow:focus
+
+{
+
+    outline: none;
+
+}
+
+
+
+.jspCorner
+
+{
+
+    background: #eeeef4;
+
+    float: left;
+
+    height: 100%;
+
+}
+
+
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+
+* html .jspCorner
+
+{
+
+    margin: 0 -3px 0 0;
+
+}
+
+
+
+
+
+
+
+div#modaltime {
+
+    background: #e2e2e2;
+
+    display: none;
+
+    left: 50%;
+
+    margin-left:-348px;
+
+    position: absolute; 
+
+    top:50px;
+
+    width: 695px; 
+
+    z-index:200;
+
+}
+
+div#modaltime h5 {
+
+    color: #000000;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    font-size:18px;
+
+    padding:20px 0 0 20px;
+
+    text-transform: uppercase;
+
+}
+
+div#modaltime p {
+
+    color: #4e4e4e;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    font-size: 12px;
+
+    padding:10px 280px 0 20px;
+
+}
+
+div#modaltime p strong {
+
+    display: block;
+
+    font-weight: normal;
+
+}
+
+div.optionsmodal {
+
+    overflow: auto;
+
+    padding:10px 0 20px 15px;
+
+    width: 100%;
+
+}
+
+div.optionsmodal a {
+
+    float: left;
+
+    margin: 0 0 0 5px;
+
+    padding: 8px 0 12px 0;
+
+    text-indent: -9999px;
+
+}
+
+div.optionsmodal a.yesgo {
+
+    background: url(../images/cart/yesiwishbutton.png) no-repeat 0 0;
+
+    width: 313px;
+
+}
+
+div.optionsmodal a.cancel {
+
+    background: url(../images/cart/cancelbutton.png) no-repeat 0 0;
+
+    width: 100px;
+
+}
+
+div#modaltime div.timermodal {
+
+    background: url(../images/package/timerbgprompt.png) no-repeat 0 0;
+
+    height: 108px;
+
+    position: absolute;
+
+    top: 20px;
+
+    right: -13px;
+
+    width: 190px;
+
+}
+
+div#modaltime div.timermodal {
+
+    background: url(../images/package/timerbgprompt.png) no-repeat 0 0;
+
+    height: 108px;
+
+    position: absolute;
+
+    top: 20px;
+
+    right: -13px;
+
+    width: 190px;
+
+}
+
+div#modaltime div.timermodal div.timemodal {
+
+    background: url(../images/package/timerbg.jpg) no-repeat 0 0;
+
+    color: #007EFF;
+
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    height: 41px;
+
+    margin: 10px auto;
+
+    text-align: center;
+
+    width: 101px;
+
+}
+
+div#modaltime div.timermodal p {
+
+    color: #fff;
+
+    font-size: 11px;
+
+    text-align: center;
+
+    padding:0;
+
+}
+
+div#modaltime a.closepromottime {
+
+    bottom: 10px;
+
+    color: #929292;
+
+    font-size: 18px;
+
+    position: absolute;
+
+    text-decoration: none;
+
+    right: 15px;
+
+}
+
+
+
+div#modallightbox {width:100%; z-index:199; position: absolute; top:0; left:0; background-color: #000;}
+
+
+
+.ticketprotector_title {
+
+	line-height: 20px;
+
+}
+
+
+
+div#content h3.shoppingcart_header {
+
+	background: url(../images/bg-header-1.gif) repeat-x scroll 0 0 transparent;
+
+	padding-bottom:20px;
+
+	font-size: 20px;
+
+	color: #515151;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	padding-top: 12px;
+
+	padding-left: 12px;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr td.deliverytd {
+
+	padding: 10px;
+
+}
+
+
+
+
+
+.insurance_type {
+
+    background-color: #fffed8;
+
+    border-radius: 5px 5px 5px 5px;
+
+/*    margin-bottom: 10px;*/
+
+    padding: 10px 0 10px 15px;
+
+    position: relative;
+
+}
+
+
+
+.insurance_type .type {
+
+    background: url("../images/tick.png") no-repeat scroll left 9px transparent;
+
+    float: left;
+
+    padding: 9px 30px 0 45px;
+
+    height: 40px;
+
+    width: 165px;
+
+}
+
+
+
+
+
+.insurance_type .typeshadow {
+
+    background: url("../images/tipshadow.png") no-repeat scroll 0 0 transparent;
+
+    float: left;
+
+    height: 52px;
+
+    width: 22px;
+
+}
+
+
+
+#delContent {
+
+	padding-top: 10px;
+
+}
+
+
+
+
+
+.tp_wrapper {
+
+    background-color: #C6C8C7;
+
+    border-radius: 8px 8px 8px 8px;
+
+    overflow: hidden;
+
+    padding: 13px 7px 7px;
+
+    position: relative;
+
+    z-index: 0;
+
+}
+
+
+
+
+
+.tp_title {
+
+    font: bold 16px nevis,Tahoma,Geneva,sans-serif;
+
+    margin-bottom: 13px;
+
+    padding-left: 20px;
+
+    text-shadow: 0 1px 0 #9A9B9B;
+
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+.tp_content {
+
+    background-color: #FFFFFF;
+
+    border-radius: 8px 8px 8px 8px;
+
+    overflow: hidden;
+
+    padding: 5px 16px;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr.ticketprotector_yesnotext td {
+
+	padding: 0 10px;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr.ticketprotector_yesnotext td div.radio {
+
+	height: 13px;
+
+}
+
+
+
+div.div_cls_block2 table.tbl_cls_block1 tr.ticketprotector_yesnotext .ticketprotector_yesnotextmsg {
+
+	padding-top: 7px;
+
+}
+
+
+
+.tbl_cls_block2 select option {
+
+	padding-left: 5px;
+
+	
+
+}
+
+
+
+#deliveryMethod option {
+
+	padding-left: 5px;
+
+	
+
+}
+
+
+
+.tbl_cls_block2 select {
+
+	border: 1px solid #9C9C9C;
+
+	padding-left: 5px;
+
+}
+
+
+
+.box_highlight_new {
+	background-color: #FFCCCC;
+    border: 1px solid #999999;
+
+    margin: 0;
+
+    padding: 1px;
+
+}
+
+
+
+.recaptcha_widget_div {
+
+	padding-left: 16px;
+
+}
+
+
+
+/* 18-02-2013 Upated by webster ocbc_voucher_fix */
+
+div.hint {
+
+    position: absolute;
+
+    right: -18px;
+
+    width: 160px;
+
+    margin-top: -4px;
+
+    padding: 10px 12px;
+
+    background: #b8d8f8;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+
+    -moz-box-shadow:    0px 0px 3px 4px #e3e3e3;
+
+    -webkit-box-shadow: 0px 0px 3px 4px #e3e3e3;
+
+    box-shadow:         0px 0px 3px 4px #e3e3e3;
+
+    color: #4E4E4E;
+
+    display: none;
+
+}
+
+/* 18-02-2013 Upated by webster ocbc_voucher_fix */
+
+div.hint img {
+
+    position: absolute;
+
+    left: -11px;
+
+    top: 5px;
+
+}
+
+
+
+/* 18-02-2013 Added by webster ocbc_voucher_fix2 */
+
+.greyMark { 
+
+	color:#aaa; 
+
+}
+
+
+
+/* 31-07-2013 updated by webster dbs_voucher */
+
+.evoucherAmtSpan {
+
+	text-align: right;
+
+	font-weight: bold;
+
+	font-size: 15px;
+
+	color: #0000FF;
+
+}
+
+/* 31-07-2013 updated by webster for dbs_voucher */
+
+.evoucherRdmAmtSpan {
+
+	text-align: right;
+
+	font-weight: normal;
+
+	font-size: 14px;
+
+}
+
+/* 28-02-2013 Added by webster for ocbc_voucher_fix3 */
+
+.ocbc_cc {
+
+    color: #0000FF;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+
+
+/* 30-07-2013 updated by webster for dbs_voucher */
+
+.evoucher_more_btn {
+
+	font-size: 12px;
+
+	color: #3981B9;
+
+	text-decoration:none;
+
+}
+
+
+
+/* 30-07-2013 updated by webster for dbs_voucher */
+
+.evoucher_more_btn:hover {
+
+	text-decoration:underline;
+
+}
+
+
+
+/* MemberRewards */
+
+div.suff .checker {
+
+    float: left;
+
+    height: 22px;
+
+    padding: 5px 0;
+
+    position: relative;
+
+    width: 24px;
+
+}
+
+div.suff .checker span {
+
+    background: url("../images/package/inputcheckbox.png") no-repeat scroll 0 0 transparent;
+
+    display: block;
+
+    height: 22px;
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 24px;
+
+    z-index: 1;
+
+}
+
+div.suff .checker span.checked {
+
+    background-position: 0 -26px;
+
+}
+
+div.suff .checker span input {
+
+    cursor: pointer;
+
+    height: 22px;
+
+    left: 0;
+
+    position: absolute;
+
+    top: 0;
+
+    width: 24px;
+
+    z-index: 0;
+
+}
+
+/* MemberRewards */
+
+
+
+/* 31-07-2013 Added by webster - dbs_voucher */
+
+div#ocbccchint {
+
+	display: none;
+
+}
+/*shenghou qas 20131218*/
+img.loader {width: 32px !important;}
