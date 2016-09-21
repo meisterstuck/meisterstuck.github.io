@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Confirmation | Demo Page</title>
+	<title>Formdetails | Demo Page</title>
 	<style type="text/css">
 		body {
 			background: #708090;
@@ -31,30 +31,6 @@
 	    	if (!results[2]) return '';
 	    	var t = decodeURIComponent(results[2].replace(/\+/g, " "));
 	    	return t;
-		}
-		function generateTransactionNumber(property) {
-			var orderId = "";
-			switch(property) {
-				case "parisianmacao":
-					orderId = "PM" + Math.floor(Math.random()*999999);
-					break;
-				case "venetianmacao":
-					orderId = "VM" + Math.floor(Math.random()*999999);
-					break;
-				case "holidayinn":
-					orderId = "HI" + Math.floor(Math.random()*999999);
-					break;
-				case "conrad":
-					orderId = "CD" + Math.floor(Math.random()*999999);
-					break;
-				case "sandsmacao":
-					orderId = "SM" + Math.floor(Math.random()*999999);
-					break;
-				default:
-					orderId = "PM" + Math.floor(Math.random()*999999);
-					break;
-			}
-			return orderId + "_test";
 		}
 		function getRoomName() {
 			var random = Math.floor(Math.random()*10);
@@ -132,7 +108,7 @@
 				productName: 'PAPB',
 				sku: getRoomName(),
 				offerCode:  'PAPB',
-				orderId: generateTransactionNumber(property),
+				orderId: "",
 				tax: '157.28',
 				total: price + 157.28,
 				unitPrice: price,
@@ -147,7 +123,7 @@
 		for (var i = 1; i < 6; i++) {
 			if ((window["trackingObject" + i]) !== undefined) {
 				var obj = window["trackingObject" + i];
-				var html = "<li><ul><li><b>Confirmation ID for Suite" + i + ": " + obj.orderId + "</b></li>";
+				var html = "<li><ul><li><b>Suite" + i + ":</b></li>";
 				html += "<li>Suite Type: " + obj.sku + "</li>";
 				html += "<li>Check-In: " + obj.arriveDate + "</li>";
 				html += "<li>Check-Out: " + obj.departDate + "</li>";
@@ -165,9 +141,7 @@
 })();</script>
 </head>
 <body>
-	<h1>Dear Miss Rachel Li,</h1>
-	<p>
-	Thank you for choosing to stay at <span id="property"></span>.
+	<h1>Form Details Page</h1>
 	</p>
 	<ul id="info"></ul>
 </body>
