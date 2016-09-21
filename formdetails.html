@@ -103,7 +103,7 @@
 				quantity: 1,
 				numRooms: 1,
 				pageID: '4',
-				pageName:'/Booking/ItineraryConfirmation',
+				pageName:'/Booking/formDetails',
 				referrer: 'booking.' + property + '.com',
 				productName: 'PAPB',
 				sku: getRoomName(),
@@ -117,8 +117,6 @@
 			}
 		}
 
-		//generate body
-		$("#property").html(property);
 
 		for (var i = 1; i < 6; i++) {
 			if ((window["trackingObject" + i]) !== undefined) {
