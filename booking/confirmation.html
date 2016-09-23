@@ -22,16 +22,6 @@
 	<script type="text/javascript">
 	$(function() {
 
-		function getRequestParam(key) {
-			var url = window.location.href;
-	    	key = key.replace(/[\[\]]/g, "\\$&");
-	    	var regex = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)"),
-	        results = regex.exec(url);
-	    	if (!results) return null;
-	    	if (!results[2]) return '';
-	    	var t = decodeURIComponent(results[2].replace(/\+/g, " "));
-	    	return t;
-		}
 		function generateTransactionNumber(property) {
 			var orderId = "";
 			switch(property) {
@@ -72,28 +62,6 @@
 				10: "Random name-10"
 			}
 			return names[random];
-		}
-
-		function getLang(language) {
-			var arr = {
-				0: "1033",
-				1: "en-US"
-			};
-			switch(language) {
-				case "cn":
-					arr[0] = "1003";
-					arr[1] = "zh-CN";
-					break;
-				case "en":
-					arr[0] = "1033";
-					arr[1] = "en-US";
-					break;
-				case "hk":
-					arr[0] = "5124";
-					arr[1] = "zh-TW";
-					break;
-			}
-			return arr;
 		}
 		function getPrice() {
 			var random = Math.floor(Math.random()*10);
@@ -176,7 +144,7 @@
 		//1033: en, 5124: hk, 1003:cn
 		var lang = getRequestParam("lang") === "" ? "1033" : getRequestParam("lang");
 		utag_data.language = getLang(lang)[1];
-		
+
 		function getLang(language) {
 			var arr = {
 				0: "1033",
@@ -197,6 +165,17 @@
 					break;
 			}
 			return arr;
+		}
+
+		function getRequestParam(key) {
+			var url = window.location.href;
+	    	key = key.replace(/[\[\]]/g, "\\$&");
+	    	var regex = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    	if (!results) return null;
+	    	if (!results[2]) return '';
+	    	var t = decodeURIComponent(results[2].replace(/\+/g, " "));
+	    	return t;
 		}
 	</script>
 </head>
