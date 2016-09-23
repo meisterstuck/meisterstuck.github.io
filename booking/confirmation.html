@@ -115,6 +115,7 @@
 		//property: parisianmacao, venetianmacao, holidayinn, conrad, sandsmacao
 		var property = getRequestParam("property") === "" ? "parisianmacao" : getRequestParam("property");
 
+
 		for (var i = 1; i <= room; i++) {
 			var price = getPrice();
 			window["trackingObject" + i] = {
@@ -159,10 +160,27 @@
 			}
 		}
 
+(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/parisian-macao/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
+})();
+		var utag_data = utag_data || {};
+		utag_data.language = function(lang) {
+			switch(lang) {
+				case "cn":
+					language = "zh-CN";
+					break;
+				case "en":
+					language = "en-US";
+					break;
+				case "hk":
+					language = "zh-TW";
+					break;
+			}
+			return language;
+		}
+
 	});
 	</script>
-	<script type="text/javascript">(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/parisian-macao/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
-})();</script>
+	<script type="text/javascript"></script>
 </head>
 <body>
 	<h1>Dear Miss Rachel Li,</h1>
