@@ -20,7 +20,7 @@
 	</style>
 	<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
 	<script type="text/javascript">
-	// $(function() {
+	$(function() {
 
 		function getRequestParam(key) {
 			var url = window.location.href;
@@ -74,24 +74,6 @@
 			return names[random];
 		}
 
-		function getPrice() {
-			var random = Math.floor(Math.random()*10);
-			var price = {
-				0: "999.08",
-				1: "1243.23",
-				2: "1245.00",
-				3: "1008",
-				4: "932",
-				5: "980",
-				6: "1498",
-				7: "1376",
-				8: "1222",
-				9: "2344",
-				10: "999.08"
-			}
-			var p = parseFloat(price[random]);
-			return p;
-		}
 		function getLang(language) {
 			var arr = {
 				0: "1033",
@@ -112,6 +94,24 @@
 					break;
 			}
 			return arr;
+		}
+		function getPrice() {
+			var random = Math.floor(Math.random()*10);
+			var price = {
+				0: "999.08",
+				1: "1243.23",
+				2: "1245.00",
+				3: "1008",
+				4: "932",
+				5: "980",
+				6: "1498",
+				7: "1376",
+				8: "1222",
+				9: "2344",
+				10: "999.08"
+			}
+			var p = parseFloat(price[random]);
+			return p;
 		}
 
 		//1033: en, 5124: hk, 1003:cn
@@ -166,14 +166,38 @@
 			}
 		}
 
-// });
+});
 	</script>
 	<script type="text/javascript">
 		
 	(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/parisian-macao/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
 	})();
 		var utag_data = utag_data || {};
+		//1033: en, 5124: hk, 1003:cn
+		var lang = getRequestParam("lang") === "" ? "1033" : getRequestParam("lang");
 		utag_data.language = getLang(lang)[1];
+		
+		function getLang(language) {
+			var arr = {
+				0: "1033",
+				1: "en-US"
+			};
+			switch(language) {
+				case "cn":
+					arr[0] = "1003";
+					arr[1] = "zh-CN";
+					break;
+				case "en":
+					arr[0] = "1033";
+					arr[1] = "en-US";
+					break;
+				case "hk":
+					arr[0] = "5124";
+					arr[1] = "zh-TW";
+					break;
+			}
+			return arr;
+		}
 	</script>
 </head>
 <body>
