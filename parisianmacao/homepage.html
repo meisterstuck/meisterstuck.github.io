@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ParsiainMacao | Homepage</title>
+	<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript">(function(a,b,c,d){ a='//tags.tiqcdn.com/utag/sands-china-limited/test/dev/utag.js'; b=document;c='script';d=b.createElement(c);d.src=a; d.type='text/java'+c;d.async=true; a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a)
+})();
+
+		$(function{} {
+			function getRequestParam(key) {
+			var url = window.location.href;
+	    	key = key.replace(/[\[\]]/g, "\\$&");
+	    	var regex = new RegExp("[?&]" + key + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    	if (!results) return null;
+	    	if (!results[2]) return '';
+	    	var t = decodeURIComponent(results[2].replace(/\+/g, " "));
+	    	return t;
+		}
+
+			var utag_data = utag_data || {};
+			utag_data.language = getRequestParam("lang");
+		});
+</script>
+</head>
+<body>
+	<h1>Test profile</h1>
+</body>
+</html>
